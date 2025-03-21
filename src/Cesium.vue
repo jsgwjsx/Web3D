@@ -82,7 +82,15 @@
                                     <el-menu-item index="55">39.根据距离，起点，角度找到目标点(turf)</el-menu-item>
                                     <el-menu-item index="56">40.通过点选获取地形或物体上的位置</el-menu-item>
                                     <el-menu-item index="57">41.LED投射灯效果</el-menu-item>
-                                    <el-menu-item index="58">42.根据矢量方向拉伸面</el-menu-item>
+                                    <el-menu-item index="58">42.根据矢量方向拉伸</el-menu-item>
+                                    <el-menu-item index="59">43.彩色文字</el-menu-item>
+                                    <el-menu-item index="60">44.动态虚线</el-menu-item>
+                                    <el-menu-item index="61">45.发光线颜色修改</el-menu-item>
+                                    <el-menu-item index="62">46.闪电</el-menu-item>
+                                    <el-menu-item index="63">47.绘制公里网络</el-menu-item>
+                                    <el-menu-item index="64">48.顶点着色器改大小</el-menu-item>
+                                    <el-menu-item index="65">49.CZML动点连线</el-menu-item>
+                                    <el-menu-item index="66">50.道路效果</el-menu-item>
                                 </el-menu-item-group>
                             </el-sub-menu>
                         </el-menu>

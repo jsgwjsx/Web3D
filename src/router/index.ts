@@ -422,6 +422,46 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Cesium_58',
         component: () =>import('../view/Cesium/58.vue')
       },
+      {
+        path: '59',
+        name: 'Cesium_59',
+        component: () =>import('../view/Cesium/59.vue')
+      },
+      {
+        path: '60',
+        name: 'Cesium_60',
+        component: () =>import('../view/Cesium/60.vue')
+      },
+      {
+        path: '61',
+        name: 'Cesium_61',
+        component: () =>import('../view/Cesium/61.vue')
+      },
+      {
+        path: '62',
+        name: 'Cesium_62',
+        component: () =>import('../view/Cesium/62.vue')
+      },
+      {
+        path: '63',
+        name: 'Cesium_63',
+        component: () =>import('../view/Cesium/63.vue')
+      },
+      {
+        path: '64',
+        name: 'Cesium_64',
+        component: () =>import('../view/Cesium/64.vue')
+      },
+      {
+        path: '65',
+        name: 'Cesium_65',
+        component: () =>import('../view/Cesium/65.vue')
+      },
+      {
+        path: '66',
+        name: 'Cesium_66',
+        component: () =>import('../view/Cesium/66.vue')
+      },
     ]
   },
   {
