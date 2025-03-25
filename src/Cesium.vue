@@ -91,6 +91,37 @@
                                     <el-menu-item index="64">48.顶点着色器改大小</el-menu-item>
                                     <el-menu-item index="65">49.CZML动点连线</el-menu-item>
                                     <el-menu-item index="66">50.道路效果</el-menu-item>
+                                    <el-menu-item index="67">51.旗帜模拟效果</el-menu-item>
+                                    <el-menu-item index="68">52.polygon随时间变化</el-menu-item>
+                                    <el-menu-item index="69">53.模型侧面绘圆</el-menu-item>
+                                    <el-menu-item index="70">54.3D雷达</el-menu-item>
+                                    <el-menu-item index="71">55.判断点在圆锥内</el-menu-item>
+                                    <el-menu-item index="72">56.polylineVolumn重构</el-menu-item>
+                                    <el-menu-item index="73">57.动态path添加点线(path)</el-menu-item>
+                                    <el-menu-item index="74">58.射线与地球相交</el-menu-item>
+                                    <el-menu-item index="75">59.斜线填充多边形</el-menu-item>
+                                    <el-menu-item index="76">60.3Dtile风格调整(shader自定义)</el-menu-item>
+                                    <el-menu-item index="77">61.两点构建圆锥</el-menu-item>
+                                    <el-menu-item index="78">62.gltf模型颜色渐变</el-menu-item>
+                                    <el-menu-item index="79">63.视图后处理</el-menu-item>
+                                    <el-menu-item index="80">64.视频显示</el-menu-item>
+                                    <el-menu-item index="81">65.闪电Plus</el-menu-item>
+                                    <el-menu-item index="82">66.视椎体底部坐标</el-menu-item>
+                                    <el-menu-item index="83">67.视椎体底部坐标(旋转矩阵获得)</el-menu-item>
+                                    <el-menu-item index="84">68.坐标轴</el-menu-item>
+                                    <el-menu-item index="85">69.雾</el-menu-item>
+                                    <el-menu-item index="86">70.多边形边缘渐变</el-menu-item>
+                                    <el-menu-item index="87">71.体渲染</el-menu-item>
+                                    <el-menu-item index="88">72.爆炸特效</el-menu-item>
+                                    <el-menu-item index="89">73.爆炸特效Plus</el-menu-item>
+                                    <el-menu-item index="90">74.显示多个球</el-menu-item>
+                                    <el-menu-item index="91">75.显示Turf构成的TIN</el-menu-item>
+                                    <el-menu-item index="92">74.entities后处理</el-menu-item>
+                                    <el-menu-item index="93">75.动态热力图</el-menu-item>
+                                    <el-menu-item index="94">76.发光效果后处理</el-menu-item>
+                                    <el-menu-item index="95">77.天空盒</el-menu-item>
+                                    <el-menu-item index="96">78.下雨效果</el-menu-item>
+                                    <el-menu-item index="97">79.下雪效果</el-menu-item>
                                 </el-menu-item-group>
                             </el-sub-menu>
                         </el-menu>

@@ -462,6 +462,162 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Cesium_66',
         component: () =>import('../view/Cesium/66.vue')
       },
+      {
+        path: '67',
+        name: 'Cesium_67',
+        component: () =>import('../view/Cesium/67.vue')
+      },
+      {
+        path: '68',
+        name: 'Cesium_68',
+        component: () =>import('../view/Cesium/68.vue')
+      },
+      {
+        path: '69',
+        name: 'Cesium_69',
+        component: () =>import('../view/Cesium/69.vue')
+      },
+      {
+        path: '70',
+        name: 'Cesium_70',
+        component: () =>import('../view/Cesium/70.vue')
+      },
+      {
+        path: '71',
+        name: 'Cesium_71',
+        component: () =>import('../view/Cesium/71.vue')
+      },
+      {
+        path: '72',
+        name: 'Cesium_72',
+        component: () =>import('../view/Cesium/72.vue')
+      },
+      {
+        path: '73',
+        name: 'Cesium_73',
+        component: () =>import('../view/Cesium/73.vue')
+      },
+      {
+        path: '74',
+        name: 'Cesium_74',
+        component: () =>import('../view/Cesium/74.vue')
+      },
+      {
+        path: '75',
+        name: 'Cesium_75',
+        component: () =>import('../view/Cesium/75.vue')
+      },
+      {
+        path: '76',
+        name: 'Cesium_76',
+        component: () =>import('../view/Cesium/76.vue')
+      },
+      {
+        path: '77',
+        name: 'Cesium_77',
+        component: () =>import('../view/Cesium/77.vue')
+      },
+      {
+        path: '78',
+        name: 'Cesium_78',
+        component: () =>import('../view/Cesium/78.vue')
+      },
+      {
+        path: '79',
+        name: 'Cesium_79',
+        component: () =>import('../view/Cesium/79.vue')
+      },
+      {
+        path: '80',
+        name: 'Cesium_80',
+        component: () =>import('../view/Cesium/80 .vue')
+      },
+      {
+        path: '81',
+        name: 'Cesium_81',
+        component: () =>import('../view/Cesium/81.vue')
+      },
+      {
+        path: '82',
+        name: 'Cesium_82',
+        component: () =>import('../view/Cesium/82.vue')
+      },
+      {
+        path: '83',
+        name: 'Cesium_83',
+        component: () =>import('../view/Cesium/83.vue')
+      },
+      {
+        path: '84',
+        name: 'Cesium_84',
+        component: () =>import('../view/Cesium/84.vue')
+      },
+      {
+        path: '85',
+        name: 'Cesium_85',
+        component: () =>import('../view/Cesium/85.vue')
+      },
+      {
+        path: '86',
+        name: 'Cesium_86',
+        component: () =>import('../view/Cesium/86.vue')
+      },
+      {
+        path: '87',
+        name: 'Cesium_87',
+        component: () =>import('../view/Cesium/87.vue')
+      },
+      {
+        path: '88',
+        name: 'Cesium_88',
+        component: () =>import('../view/Cesium/88.vue')
+      },
+      {
+        path: '89',
+        name: 'Cesium_89',
+        component: () =>import('../view/Cesium/89.vue')
+      },
+      {
+        path: '90',
+        name: 'Cesium_90',
+        component: () =>import('../view/Cesium/90.vue')
+      },
+      {
+        path: '91',
+        name: 'Cesium_91',
+        component: () =>import('../view/Cesium/91.vue')
+      },
+      {
+        path: '92',
+        name: 'Cesium_92',
+        component: () =>import('../view/Cesium/92.vue')
+      },
+      {
+        path: '93',
+        name: 'Cesium_93',
+        component: () =>import('../view/Cesium/93.vue')
+      },
+      {
+        path: '94',
+        name: 'Cesium_94',
+        component: () =>import('../view/Cesium/94.vue')
+      },
+      {
+        path: '95',
+        name: 'Cesium_95',
+        component: () =>import('../view/Cesium/95.vue')
+      },
+      {
+        path: '96',
+        name: 'Cesium_96',
+        component: () =>import('../view/Cesium/96.vue')
+      },
+      {
+        path: '97',
+        name: 'Cesium_97',
+        component: () =>import('../view/Cesium/97.vue')
+      },
+
     ]
   },
   {
