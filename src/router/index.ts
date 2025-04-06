@@ -617,7 +617,16 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Cesium_97',
         component: () =>import('../view/Cesium/97.vue')
       },
-
+      {
+        path: '98',
+        name: 'Cesium_98',
+        component: () =>import('../view/Cesium/98.vue')
+      },
+      {
+        path: '99',
+        name: 'Cesium_99',
+        component: () =>import('../view/Cesium/99.vue')
+      },
     ]
   },
   {

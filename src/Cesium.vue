@@ -122,6 +122,8 @@
                                     <el-menu-item index="95">77.天空盒</el-menu-item>
                                     <el-menu-item index="96">78.下雨效果</el-menu-item>
                                     <el-menu-item index="97">79.下雪效果</el-menu-item>
+                                    <el-menu-item index="98">80.淹没分析</el-menu-item>
+                                    <el-menu-item index="99">81.水效果</el-menu-item>
                                 </el-menu-item-group>
                             </el-sub-menu>
                         </el-menu>
