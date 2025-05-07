@@ -5,7 +5,7 @@ import { earth, lon2xyz } from './earth'
 import { FileLoader } from 'three'
 import config from './config'
 import sprite from './Sprite'
-import { landPoints } from './countryMesh/index';
+import { landPoints} from './countryMesh/index';
 
 var R = config.R//设置地球半径
 

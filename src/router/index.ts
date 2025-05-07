@@ -7,7 +7,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '',
     name: 'init',
-    redirect: '/page'
+    redirect: '/webgl/37'
   },
   {
     path: '/TollBath',
@@ -84,6 +84,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/City',
     name: 'City',
     component: () => import('../view/Example/Basic_08/index.vue')
+  },
+  {
+    path: '/Bluesky',
+    name: 'Bluesky',
+    component: () => import('../view/Example/sky/index.vue')
   },
   {
     path: '/Roam',
@@ -626,6 +631,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '99',
         name: 'Cesium_99',
         component: () =>import('../view/Cesium/99.vue')
+      },
+      {
+        path: '100',
+        name: 'Cesium_100',
+        component: () =>import('../view/Cesium/100.vue')
       },
     ]
   },

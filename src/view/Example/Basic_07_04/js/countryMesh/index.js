@@ -49,7 +49,6 @@ function countryMesh(R,polygonArr) {
   }
   function landPoints(R,worldData){
     var pointsArr = gridPoint2(worldData);//陆地网格点阵数据经纬度坐标
-    console.log(pointsArr)
     var spherePointsArr = [];//经纬度pointsArr数据转球面坐标spherePointsArr
     var colorsArr = [];//顶点颜色数据
     pointsArr.forEach((point) => {

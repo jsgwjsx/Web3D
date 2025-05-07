@@ -5,12 +5,12 @@
         <div class="Oneheader">Web3D案例</div>
         <div class="Twoheader">1.物联网相关</div>
         <div class="content">
-            <el-card class="card">
+            <!-- <el-card class="card">
                 <img src="/model/example/Basic_01/image.png" alt="" width="100%" height="100%">
                 <template #footer>
                     <a href="/TollBath" class="jump">收费站案例</a>
                 </template>
-            </el-card>
+            </el-card> -->
             <el-card class="card">
                 <img src="/model/example/Basic_02/backimg.png" alt="" width="100%" height="100%">
                 <template #footer>
@@ -127,12 +127,21 @@
                 </template>
             </el-card>
         </div>
-        <div class="Twoheader">3.3D地球相关</div>
+        <div class="Twoheader">4.智慧城市相关</div>
         <div class="content" style="margin-bottom: 10%;">
             <el-card class="card">
                 <img src="/model/example/Basic_07/back1.png" alt="" width="100%" height="100%">
                 <template #footer>
                     <a href="/City" class="jump">智慧城市</a>
+                </template>
+            </el-card>
+        </div>
+        <div class="Twoheader">5.渲染相关</div>
+        <div class="content" style="margin-bottom: 10%;">
+            <el-card class="card">
+                <img src="/model/example/sky/bluesky.png" alt="" width="100%" height="100%">
+                <template #footer>
+                    <a href="/Bluesky" class="jump">动态天空</a>
                 </template>
             </el-card>
         </div>
