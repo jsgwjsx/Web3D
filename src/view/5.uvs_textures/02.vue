@@ -27,7 +27,7 @@ scene.add(light)
 //创建贴图加载器对象
 const loader = new THREE.TextureLoader()
 //根据路径加载贴图
-const texture = loader.load('/瓷砖.jpg')
+const texture = loader.load('/static/瓷砖.jpg')
 //设置texture阵列
 //在水平(s)与垂直(t)方向上允许重复
 texture.wrapS = THREE.RepeatWrapping;
@@ -66,7 +66,7 @@ scene.add(MeshHelp)
 
 //加载透明图片
 const loader1 = new THREE.TextureLoader()
-const texture1 = loader1.load('/指南针.png')
+const texture1 = loader1.load('/static/指南针.png')
 const material1 = new THREE.MeshLambertMaterial({
     map:texture1,
     transparent:true,//开启透明计算，让图片的透明背景自动透明

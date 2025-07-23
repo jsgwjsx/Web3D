@@ -9,7 +9,7 @@ function createLightPillar(R,lon,lat,height){
   geometry.translate(0, 0, height / 2);//平移使光柱底部与XOY平面重合
   var textureLoader = new THREE.TextureLoader(); // TextureLoader创建一个纹理加载器对象
   var material = new THREE.MeshBasicMaterial({
-    map: textureLoader.load('/model/example/Basic_07/光柱.png'),
+    map: textureLoader.load('/static/model/example/Basic_07/光柱.png'),
     color: 0x44ffaa, //光柱颜色，光柱map贴图是白色，可以通过color调节颜色   
     transparent: true, //使用背景透明的png贴图，注意开启透明计算
     side: THREE.DoubleSide, //双面可见

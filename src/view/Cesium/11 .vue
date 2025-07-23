@@ -1,7 +1,7 @@
 <template>
     <div>
         <video id="trailer" style="display: none;" autoplay loop crossorigin controls>
-            <source src="../../../public/Cesium/tt.mp4" type="video/mp4">
+            <source src="../../../public/static/Cesium/tt.mp4" type="video/mp4">
         Your browser does not support the <code>video</code> element.
         </video>
         <div id="map"></div>

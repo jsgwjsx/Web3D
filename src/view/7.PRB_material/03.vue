@@ -42,7 +42,7 @@ const textureCube = new THREE.CubeTextureLoader().setPath('/环境贴图1/')
 
 //创建一个gltf模型加载器对象
 const gltfloader = new GLTFLoader()
-gltfloader.load('/model/车pbr.glb', function (gltf) {
+gltfloader.load('/static/model/车pbr.glb', function (gltf) {
     //设置模型
     //获取车身模型
     const mesh1 = gltf.scene.getObjectByName('外壳01')

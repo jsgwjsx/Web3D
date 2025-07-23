@@ -37,7 +37,7 @@ const geometry = new THREE.TubeGeometry(path, 200, 5, 30)
 
 //加载纹理贴图并且设置管道方向阵列
 const texloader = new THREE.TextureLoader()
-const texture = texloader.load('/diffuse.jpg')
+const texture = texloader.load('/static/diffuse.jpg')
 //设置x重复轴重复
 texture.wrapS = THREE.RepeatWrapping
 //设置重复次数

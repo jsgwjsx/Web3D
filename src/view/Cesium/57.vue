@@ -40,7 +40,7 @@ Cesium.Material._materialCache.addMaterial('LEDLight', {
     fabric: {
         type: 'LEDLight',
         uniforms: {
-            image: '../../../public/Cesium/fire.png',
+            image: '../../../public/static/Cesium/fire.png',
             speed: 0.01
         },
         source: `

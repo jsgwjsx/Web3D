@@ -69,8 +69,8 @@ onMounted(() => {
         fabric: {
             type: 'textureOverlay',
             uniforms: {
-                image1: '../../../public/Cesium/rada.png',
-                image2: '../../../public/Cesium/rada1.png',
+                image1: '../../../public/static/Cesium/rada.png',
+                image2: '../../../public/static/Cesium/rada1.png',
             },
             source: `
 uniform sampler2D image1;

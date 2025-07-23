@@ -36,12 +36,12 @@ onMounted(() => {
     viewer.scene.debugShowFramesPerSecond = true //显示fps
     viewer.scene.skyBox = new Cesium.SkyBox({
   sources : {
-    positiveX : '../../../public/Cesium/环境贴图3/px.jpg',
-    negativeX : '../../../public/Cesium/环境贴图3/nx.jpg',
-    positiveY : '../../../public/Cesium/环境贴图3/py.jpg',
-    negativeY : '../../../public/Cesium/环境贴图3/ny.jpg',
-    positiveZ : '../../../public/Cesium/环境贴图3/pz.jpg',
-    negativeZ : '../../../public/Cesium/环境贴图3/nz.jpg'
+    positiveX : '../../../public/static/Cesium/环境贴图3/px.jpg',
+    negativeX : '../../../public/static/Cesium/环境贴图3/nx.jpg',
+    positiveY : '../../../public/static/Cesium/环境贴图3/py.jpg',
+    negativeY : '../../../public/static/Cesium/环境贴图3/ny.jpg',
+    positiveZ : '../../../public/static/Cesium/环境贴图3/pz.jpg',
+    negativeZ : '../../../public/static/Cesium/环境贴图3/nz.jpg'
   }
 });
 

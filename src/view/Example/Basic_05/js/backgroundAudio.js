@@ -6,7 +6,7 @@ function createAudio() {
     var sound = new THREE.Audio(listener); //开门音频对象
     // 创建一个音频加载器对象
     var audioLoader = new THREE.AudioLoader();
-    audioLoader.load('/model/example/Basic_05/背景.wav', function (buffer) {
+    audioLoader.load('/static/model/example/Basic_05/背景.wav', function (buffer) {
         sound.setBuffer(buffer);
         sound.setVolume(0.1); //播放音量
         sound.setLoop(true); //设置循环播放

@@ -6,7 +6,6 @@
 import { onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import path from 'path';
 
 
 //创建一个3维场景scene

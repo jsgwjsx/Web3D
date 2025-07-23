@@ -23,7 +23,7 @@ const Boxgroup = new THREE.Group()
 group.meshArr = [];//用于鼠标射线拾取
 var loader = new THREE.FileLoader()
 loader.setResponseType('json')
-loader.load('/model/example/Basic_07/worldZh.json', function (data) {
+loader.load('/static/model/example/Basic_07/worldZh.json', function (data) {
         data.features.forEach(function (country) {
             // "Polygon"：国家country有一个封闭轮廓
             //"MultiPolygon"：国家country有多个封闭轮廓

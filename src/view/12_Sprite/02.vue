@@ -25,11 +25,11 @@ const DirectionLight = new THREE.DirectionalLight(0xffffff, 1.0, 0.0)
 DirectionLight.position.set(100, 100, 60)
 scene.add(DirectionLight)
 
-const loader = new GLTFLoader().load('/model/工厂.gltf',(gltf)=>{
+const loader = new GLTFLoader().load('/static/model/工厂.gltf',(gltf)=>{
     scene.add(gltf.scene)
 })
 
-const weather = new THREE.TextureLoader().load('/雪花.png')
+const weather = new THREE.TextureLoader().load('/static/雪花.png')
 //设置精灵模型
 const texture = new THREE.SpriteMaterial({
     map:weather,

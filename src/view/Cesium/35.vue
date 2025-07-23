@@ -145,7 +145,7 @@ onMounted(() => {
         model: {
             minimumPixelSize: 32,//最小尺寸
             // 模型路径
-            uri: '../../../public/Cesium/汽车.glb',
+            uri: '../../../public/static/Cesium/汽车.glb',
             distanceDisplayCondition: new Cesium.DistanceDisplayCondition(10, 20000),//模型显示的视野范围
         },
         // 4.实体的path属性指定了实体的路径属性。

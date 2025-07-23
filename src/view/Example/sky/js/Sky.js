@@ -24,7 +24,7 @@ class Sky extends Mesh {
             depthWrite: false
         });
 
-        const url = options.url || '/perlin256.png';
+        const url = options.url || '/static/perlin256.png';
         const texture = new TextureLoader().load(url);
         texture.anisotropy = 16;
         texture.wrapS = RepeatWrapping;

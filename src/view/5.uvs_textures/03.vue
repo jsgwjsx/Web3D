@@ -27,7 +27,7 @@ scene.add(light)
 //创建贴图加载器对象
 const loader = new THREE.TextureLoader()
 //根据路径加载贴图
-const texture = loader.load('/纹理3.jpg')
+const texture = loader.load('/static/纹理3.jpg')
 //设置texture阵列
 //在水平(s)与垂直(t)方向上允许重复
 texture.wrapS = THREE.RepeatWrapping;

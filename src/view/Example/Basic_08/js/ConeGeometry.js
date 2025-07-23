@@ -4,7 +4,7 @@ import * as THREE from 'three'
 // 3664234.375
 // 177
 var textureLoader= new THREE.TextureLoader()
-var texture = textureLoader.load('/model/example/Basic_08/渐变.png')
+var texture = textureLoader.load('/static/model/example/Basic_08/渐变.png')
 var ConeGroup = new THREE.Group()
 var Conematerial = new THREE.MeshLambertMaterial({
     color:0xccff22,
@@ -24,7 +24,7 @@ mesh2.rotateX(Math.PI)
 //光圈
 var circle = new THREE.CircleGeometry(50,32)
 var circlematerial = new THREE.MeshLambertMaterial({
-    map:textureLoader.load('/model/example/Basic_08/标注光圈.png'),
+    map:textureLoader.load('/static/model/example/Basic_08/标注光圈.png'),
     color:0xccff22,
     transparent: true, //需要开启透明度计算，否则着色器透明度设置无效
     // opacity: 0.5,//整体改变透明度
@@ -39,7 +39,7 @@ ConeGroup.add(circleMesh)
 var cly = new THREE.CylinderGeometry(50,50,20,32,32,true)
 var clymaterial = new THREE.MeshLambertMaterial({
     color:0xccff22,
-    map: textureLoader.load('/model/example/Basic_08/渐变.png'),
+    map: textureLoader.load('/static/model/example/Basic_08/渐变.png'),
     transparent:true,
     side:THREE.DoubleSide
 })

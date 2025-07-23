@@ -278,7 +278,7 @@ import router from '../router';
                                     <el-menu-item index="/Cesium/10">2.四种贴地线</el-menu-item>
                                     <el-menu-item index="/Cesium/11">3.地球纹理</el-menu-item>
                                     <el-menu-item index="/Cesium/12">4.CZML动态路径</el-menu-item>
-                                    <el-menu-item index="/Cesium/13">5.Heatmap热力图</el-menu-item>
+                                    <!-- <el-menu-item index="/Cesium/13">5.Heatmap热力图</el-menu-item> -->
                                     <el-menu-item index="/Cesium/14">6.鹰眼图</el-menu-item>
                                     <el-menu-item index="/Cesium/15">7.动态纹理-颜色</el-menu-item>
                                     <el-menu-item index="/Cesium/16">8.Entity聚合</el-menu-item>
@@ -374,6 +374,11 @@ import router from '../router';
                                     <el-menu-item index="/Cesium/98">80.淹没分析</el-menu-item>
                                     <el-menu-item index="/Cesium/99">81.水效果</el-menu-item>
                                     <el-menu-item index="/Cesium/100">82.卷帘效果</el-menu-item>
+                                    <el-menu-item index="/Cesium/101">83.体素体渲染(voxel rendering)</el-menu-item>
+                                    <el-menu-item index="/Cesium/102">84.自定义shader材质</el-menu-item>
+                                    <el-menu-item index="/Cesium/103">85.迁移shadetoy的shader(2d)</el-menu-item>
+                                    <el-menu-item index="/Cesium/104">85.迁移shadetoy的shader(3d)</el-menu-item>
+                                    <el-menu-item index="/Cesium/105">86.3D纹理+RayMarching+代理几何实现体渲染</el-menu-item>
                                 </el-scrollbar>
                                 </el-menu-item-group>
                         </el-sub-menu>

@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { lon2xyz } from '../earth.js'
 var geometry = new THREE.PlaneGeometry(1, 1); //默认在XOY平面上
 var textureLoader = new THREE.TextureLoader(); // TextureLoader创建一个纹理加载器对象
-var texture = textureLoader.load('/model/example/Basic_07/标注光圈.png');
+var texture = textureLoader.load('/static/model/example/Basic_07/标注光圈.png');
 
 function createWaveMesh(R, lon, lat) {
     // 如果不同mesh材质的透明度、颜色等属性不同，材质不能共享

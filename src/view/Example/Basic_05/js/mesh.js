@@ -26,7 +26,7 @@ var sprite ;
 
 var mesh;
 
-loader.load('/model/example/Basic_05/轿车.glb', (gltf) => {
+loader.load('/static/model/example/Basic_05/轿车.glb', (gltf) => {
   group.add(gltf.scene)
   
   SetCarMaterial(gltf)
@@ -47,7 +47,7 @@ loader.load('/model/example/Basic_05/轿车.glb', (gltf) => {
 
 //设置地面
 var geometry = new THREE.PlaneGeometry(6000,6000)//矩形平面
-var texture = new THREE.TextureLoader().load('/model/example/Basic_05/瓷砖.jpg')
+var texture = new THREE.TextureLoader().load('/static/model/example/Basic_05/瓷砖.jpg')
 texture.encoding = THREE.sRGBEncoding;
 
 //设置阵列

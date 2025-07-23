@@ -18,7 +18,7 @@ linegroup.position.z += 0.1
 const loader = new THREE.FileLoader();
 loader.setResponseType('json')
 
-loader.load('/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data) {
+loader.load('/static/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data) {
 
   data.features.forEach(function (area) {
     // "Polygon"：国家area有一个封闭轮廓
@@ -38,7 +38,7 @@ loader.load('/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.js
 
 
 // ./数据.json包含城市的经纬度坐标和对应的PM2.5值
-loader.load('/model/example/Basic_06/非GeoJSON数据/数据.json', function (data) {
+loader.load('/static/model/example/Basic_06/非GeoJSON数据/数据.json', function (data) {
 
   // GDP最高对应红色，GDP最低对应白色
   var color1 = new THREE.Color(0x00ffcc);

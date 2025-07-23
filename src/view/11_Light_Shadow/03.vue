@@ -48,7 +48,7 @@ scene.add(DirectionLight)
 
 //添加环境贴图
 const textureCube = new THREE.CubeTextureLoader()
-    .setPath('/环境贴图1/')
+    .setPath('/static/环境贴图1/')
     .load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']);
 //更改纹理编码
 textureCube.encoding = THREE.sRGBEncoding;

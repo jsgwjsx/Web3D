@@ -3,12 +3,12 @@
         <!-- CSS布局方式写法很多，不一定和课程一致 -->
         <div id="tag" style="display: none;">
             <div style="position:absolute;left:350px;top:20px;">
-                <img id="close" src="/关闭.png" width="32" style="pointer-events: auto;">
+                <img id="close" src="/static/关闭.png" width="32" style="pointer-events: auto;">
             </div>
             <!-- position:relative;约束子元素绝对定位参照点 -->
             <div style="position:relative;width:400px;height:322px;color: #fff;">
                 <!-- 图片绝对定位100%填充父元素，作为标签的背景 -->
-                <img src="/信息背景.png" alt="" style="width:100%;position: absolute;left: 0px;top: 0px;">
+                <img src="/static/信息背景.png" alt="" style="width:100%;position: absolute;left: 0px;top: 0px;">
                 <!-- 名称、存储量、设备状态、等信息叠加到背景图上即可 -->
                 <div style="position:absolute;left:48px;top:36px;font-size:16px;">
                     <div style="font-size:20px;font-weight: 400;">
@@ -76,7 +76,7 @@ const material = new THREE.MeshLambertMaterial({
     color: 0x009999,
 });
 
-const loader = new GLTFLoader().load('/model/工厂.glb', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/工厂.glb', (gltf) => {
     scene.add(gltf.scene)
 
 

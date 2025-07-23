@@ -92,7 +92,7 @@ onMounted(() => {
     };
     //通过viewer.scene.primitives加载ParticleSystem(粒子系统)
     var particleSystem = viewer.scene.primitives.add(new Cesium.ParticleSystem({
-        image: '../../../public/Cesium/fire.png',
+        image: '../../../public/static/Cesium/fire.png',
         startColor: Cesium.Color.RED.withAlpha(0.5),//设置粒子开始时候的颜色与透明度
         endColor: Cesium.Color.YELLOW.withAlpha(0.5),//设置粒子结束时候的颜色与透明度
         startScale: viewModel.startScale,//设置粒子开始时候的尺寸

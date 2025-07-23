@@ -46,7 +46,7 @@ const mesh = new THREE.Mesh(plane,planematerial)
 scene.add(mesh)
 
 
-const texture = new THREE.TextureLoader().load('/光点.png')
+const texture = new THREE.TextureLoader().load('/static/光点.png')
 const spriteMaterials = new THREE.SpriteMaterial({
     map:texture,
     transparent:true
@@ -59,7 +59,7 @@ sprite1.change = function(){
     mesh.material.color.set(0xffffff)
 }
 
-const textur2 = new THREE.TextureLoader().load('/光点.png')
+const textur2 = new THREE.TextureLoader().load('/static/光点.png')
 const spriteMaterials2 = new THREE.SpriteMaterial({
     map:texture,
     color:0xffff00,

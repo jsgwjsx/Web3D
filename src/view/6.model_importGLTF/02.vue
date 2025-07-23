@@ -27,7 +27,7 @@ scene.add(light)
 
 //创建一个gltf模型加载器对象
 const gltfloader = new GLTFLoader()
-gltfloader.load('/model/工厂.gltf', function (gltf) {
+gltfloader.load('/static/model/工厂.gltf', function (gltf) {
     //获取名字为tree004_2的模型对象(即使有多个，默认只显示最后一个模型对象)
     console.log( gltf.scene.getObjectByName('tree004_2'))
         //获取名字为tree004_2的模型对象并且遍历

@@ -36,7 +36,7 @@ onMounted(() => {
     })
     viewer.scene.debugShowFramesPerSecond = true //显示fps
 
-    const dataSource = Cesium.GeoJsonDataSource.load('../../../public/Cesium/province.json', {
+    const dataSource = Cesium.GeoJsonDataSource.load('../../../public/static/Cesium/province.json', {
         stroke: Cesium.Color.GREEN,
         fill: Cesium.Color.RED,
         strokeWidth: 3,

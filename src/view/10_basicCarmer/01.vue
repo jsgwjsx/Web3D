@@ -25,7 +25,7 @@ scene.add(pointLight)
 const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light)
 
-const loader =new GLTFLoader().load('/model/轿车.glb',gltfSuccess)
+const loader =new GLTFLoader().load('/static/model/轿车.glb',gltfSuccess)
 
 const geometry = new THREE.PlaneGeometry(1000,500)
 const material = new THREE.MeshLambertMaterial({

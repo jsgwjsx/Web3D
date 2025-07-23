@@ -43,7 +43,7 @@ const mesh = new THREE.Mesh(geometry, material)
 mesh.position.copy(p1)
 scene.add(mesh)
 
-const loader = new GLTFLoader().load('/model/16/士兵.glb', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/16/士兵.glb', (gltf) => {
     scene.add(gltf.scene)
     gltf.scene.scale.set(10, 10, 10)
     gltf.scene.position.copy(p2)

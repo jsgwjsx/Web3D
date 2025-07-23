@@ -11,7 +11,7 @@ var R = config.R;//地球半径
 var loader = new THREE.FileLoader();
 loader.setResponseType('json');
 var bboxgroup = new THREE.Group();//声明一个组对象包含人口密度柱子mesh，方便引入到场景
-loader.load('/model/example/Basic_07/人口密度.json', function (data) {
+loader.load('/static/model/example/Basic_07/人口密度.json', function (data) {
   var coord = data.population;//所有经纬度坐标和对应需要可视化的数值
   var geoArr = []; //所有几何体集合
   var Max = maxFun(coord) * 0.05;//设置一个基准值,以要可视化的数据最大值为准即可 如果极大值过大 也可以根据需要降低 以视觉效果呈现为准

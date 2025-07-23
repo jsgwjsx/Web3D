@@ -43,7 +43,7 @@ const waterGeometry = new THREE.PlaneGeometry(skyscale, skyscale);
 water = new Water(waterGeometry, {
     textureWidth: 512,
     textureHeight: 512,
-    waterNormals: new THREE.TextureLoader().load('/waternormals.jpg', function (texture) {
+    waterNormals: new THREE.TextureLoader().load('/static/waternormals.jpg', function (texture) {
         texture.wrapT = THREE.RepeatWrapping;
         texture.wrapS = THREE.RepeatWrapping;
     }),

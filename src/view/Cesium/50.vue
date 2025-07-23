@@ -70,28 +70,28 @@ onMounted(() => {
         let mleft = Cesium.Matrix3.multiply(Cesium.Matrix3.fromRotationZ(r180), Cesium.Matrix3.fromRotationX(r90), new Cesium.Matrix3());
         mleft = Cesium.Matrix4.fromRotationTranslation(mleft, new Cesium.Cartesian3(0, step, 0));
         mleft = Cesium.Matrix4.multiply(mleft,scaleMatrix,mleft)
-        CreateFace(mleft, "../../../public/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
+        CreateFace(mleft, "../../../public/static/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
 
         let mright = Cesium.Matrix4.fromRotationTranslation(Cesium.Matrix3.fromRotationX(r90), new Cesium.Cartesian3(0, -step, 0));
         mright = Cesium.Matrix4.multiply(mright,scaleMatrix,mright)
-        CreateFace(mright, "../../../public/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
+        CreateFace(mright, "../../../public/static/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
 
         let mfront = Cesium.Matrix3.multiply(Cesium.Matrix3.fromRotationZ(r90), Cesium.Matrix3.fromRotationX(r90), new Cesium.Matrix3());
         mfront = Cesium.Matrix4.fromRotationTranslation(mfront, new Cesium.Cartesian3(step, 0, 0));
         mfront = Cesium.Matrix4.multiply(mfront,scaleMatrix,mfront)
-        CreateFace(mfront,  "../../../public/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
+        CreateFace(mfront,  "../../../public/static/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
 
         let mback = Cesium.Matrix3.multiply(Cesium.Matrix3.fromRotationZ(-r90), Cesium.Matrix3.fromRotationX(r90), new Cesium.Matrix3());
         mback = Cesium.Matrix4.fromRotationTranslation(mback, new Cesium.Cartesian3(-step, 0, 0));
         mback = Cesium.Matrix4.multiply(mback,scaleMatrix,mback)
-        CreateFace(mback,  "../../../public/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
+        CreateFace(mback,  "../../../public/static/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
         
         let mup = Cesium.Matrix4.fromRotationTranslation(Cesium.Matrix3.IDENTITY, new Cesium.Cartesian3(0, 0, step));
         mup = Cesium.Matrix4.multiply(mup,scaleMatrix,mup)
-        CreateFace(mup, "../../../public/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
+        CreateFace(mup, "../../../public/static/Cesium/taiji.jpg").modelMatrix = itemPositonMatrix;
         let mdn = Cesium.Matrix4.fromRotationTranslation(Cesium.Matrix3.fromRotationY(r180), new Cesium.Cartesian3(0, 0, -step));
         mdn = Cesium.Matrix4.multiply(mdn,scaleMatrix,mdn)
-        CreateFace(mdn,  "../../../public/Cesium/fire.png").modelMatrix = itemPositonMatrix;
+        CreateFace(mdn,  "../../../public/static/Cesium/fire.png").modelMatrix = itemPositonMatrix;
     }
     CreateCube();
 

@@ -59,7 +59,7 @@ onMounted(() => {
                         return y
                     }, false),
                     material: new Cesium.ImageMaterialProperty({
-                        image: '../../../public/Cesium/taiji.jpg',
+                        image: '../../../public/static/Cesium/taiji.jpg',
                         color: new Cesium.CallbackProperty(function () {
                             if (color >= 0) {
                                 color -= 0.01

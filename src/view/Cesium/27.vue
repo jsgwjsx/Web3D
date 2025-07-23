@@ -48,7 +48,7 @@ onMounted(() => {
                 fabric: {
                     type: 'Water',
                     uniforms: {
-                        normalMap: '../../../public/Cesium/water.jpg',
+                        normalMap: '../../../public/static/Cesium/water.jpg',
                         frequency: 10000.0,  //频率
                         animationSpeed: 0.1,//动画速度
                         amplitude: 1.0,     //振幅    

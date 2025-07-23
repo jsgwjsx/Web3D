@@ -65,13 +65,13 @@ onMounted(() => {
         return this === other || (other instanceof WaterMaterialProperty);
     }
     let m = Cesium.Material._materialCache.getMaterial("Water");//获取水的材质
-    m.fabric.uniforms.normalMap = Cesium.buildModuleUrl('../../../public/Cesium/water.jpg');
+    m.fabric.uniforms.normalMap = Cesium.buildModuleUrl('../../../public/static/Cesium/water.jpg');
     //使用自定义参数
     m.fabric.uniforms.animationSpeed = 0.01;
     m.fabric.uniforms.amplitude = 100.0;
     m.fabric.uniforms.frequency = 1000;
     Cesium.Material._materialCache.addMaterial('PolygonWater', m);
-    const promise = Cesium.GeoJsonDataSource.load('../../../public/Cesium/polygon.json', {
+    const promise = Cesium.GeoJsonDataSource.load('../../../public/static/Cesium/polygon.json', {
         stroke: Cesium.Color.HOTPINK,
         fill: Cesium.Color.PINK,
         strokeWidth: 3,

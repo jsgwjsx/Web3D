@@ -19,7 +19,7 @@ group.add(sprite)
 
 var loader = new THREE.FileLoader()
 loader.setResponseType('json')
-loader.load('/model/example/Basic_07/world.json', function (data) {
+loader.load('/static/model/example/Basic_07/world.json', function (data) {
    var points = landPoints(R, data);//渲染陆地上网格点阵数据
 group.add(points);
 

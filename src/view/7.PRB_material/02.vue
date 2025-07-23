@@ -24,7 +24,7 @@ const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light)
 
 //加载立方体纹理CubeTextureLoader(环境贴图)(实际上CubeTextureLoader就是六张贴图，以此来模拟环境对物体的光照反射等等)
-const texture = new THREE.CubeTextureLoader().setPath('/环境贴图1/')
+const texture = new THREE.CubeTextureLoader().setPath('/static/环境贴图1/')
 .load(['px.jpg','nx.jpg','py.jpg','ny.jpg','pz.jpg','nz.jpg',])
 texture.encoding=THREE.sRGBEncoding;  //纹理和渲染器颜色空间一致
 //创建一个gltf模型加载器对象

@@ -73,7 +73,7 @@ onMounted(() => {
     viewer.zoomTo(redLine)
     //2.使用geojson加载贴地线，配置clampToGround参数为true就好
     //也会出现上述问题
-    viewer.dataSources.add(Cesium.GeoJsonDataSource.load('../../../public/Cesium/line.json', {
+    viewer.dataSources.add(Cesium.GeoJsonDataSource.load('../../../public/static/Cesium/line.json', {
         clampToGround: true,
     }))
     //3.使用primitive进行绘制,效果比较好，不影响点云

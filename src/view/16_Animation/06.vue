@@ -27,7 +27,7 @@ const DirectionLight = new THREE.DirectionalLight(0xffffff, 1.0, 0.0)
 DirectionLight.position.set(100, 100, 60)
 scene.add(DirectionLight)
 
-const loader = new GLTFLoader().load('/model/16/士兵.glb', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/16/士兵.glb', (gltf) => {
     scene.add(gltf.scene)
     console.log(gltf.scene)
     const Bonehelper = new THREE.SkeletonHelper(gltf.scene)

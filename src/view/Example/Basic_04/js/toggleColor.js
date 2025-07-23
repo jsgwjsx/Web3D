@@ -3,10 +3,10 @@ import { mesh } from './mesh'
 
 //加载四种纹理贴图
 const colorLoader = new THREE.TextureLoader()
-const Redmap = colorLoader.load('/model/example/Basic_04/model/珊瑚红.png')
-const Blackmap = colorLoader.load('/model/example/Basic_04/model/幻夜黑.png')
-const Bluemap = colorLoader.load('/model/example/Basic_04/model/极光蓝.png')
-const Purplemap = colorLoader.load('/model/example/Basic_04/model/极光紫.png')
+const Redmap = colorLoader.load('/static/model/example/Basic_04/model/珊瑚红.png')
+const Blackmap = colorLoader.load('/static/model/example/Basic_04/model/幻夜黑.png')
+const Bluemap = colorLoader.load('/static/model/example/Basic_04/model/极光蓝.png')
+const Purplemap = colorLoader.load('/static/model/example/Basic_04/model/极光紫.png')
 
 
 function toggleColor(type) {

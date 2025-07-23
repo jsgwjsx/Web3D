@@ -3,9 +3,9 @@ import * as THREE from 'three';
 import {lon2xy} from './math.js';
 import  output_fragment from './output_fragment3.glsl.js'
 // 水面颜色贴图
-var texture = new THREE.TextureLoader().load('/model/example/Basic_08/水面.jpg');
+var texture = new THREE.TextureLoader().load('/static/model/example/Basic_08/水面.jpg');
 // 水面法线贴图
-var normalTexture = new THREE.TextureLoader().load('/model/example/Basic_08/normal.jpg');
+var normalTexture = new THREE.TextureLoader().load('/static/model/example/Basic_08/normal.jpg');
 // 设置阵列模式为 RepeatWrapping
 texture.wrapS = THREE.RepeatWrapping
 texture.wrapT = THREE.RepeatWrapping

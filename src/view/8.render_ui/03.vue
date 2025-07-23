@@ -84,7 +84,7 @@ function initProgram(canvasid) {
 const percentDiv = document.getElementById('per');// 获取进度条元素
 
 //
-loader.load('/model/工厂.gltf', (gltf) => {
+loader.load('/static/model/工厂.gltf', (gltf) => {
     //.load()方法的参数2是一个函数，参数2函数是模型加载完成以后才会被调用执行。
     scene.add(gltf.scene)
     // 加载完成，删除进度条

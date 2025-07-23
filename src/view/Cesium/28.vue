@@ -45,7 +45,7 @@ onMounted(() => {
                 fabric: {
                     type: options.type || 'customMaterial',//自定义的材质名称
                     uniforms: {
-                        u_img: "../../../public/Cesium/a.jpg",
+                        u_img: "../../../public/static/Cesium/a.jpg",
                         u_time: 0.0
                     },
                     source: `
@@ -79,7 +79,7 @@ onMounted(() => {
     const cusmaterial = new customMaterial({
         type: 'customMaterial',
         time: 0.0,
-        img: "../../../public/Cesium/a.jpg"
+        img: "../../../public/static/Cesium/a.jpg"
     });
     //给Entity设置自定义material
     var entity = viewer.entities.add({
@@ -110,7 +110,7 @@ onMounted(() => {
                 fabric: {
                     type: 'cusmaterial',
                     uniforms: {
-                        u_img: "../../../public/Cesium/a.jpg",
+                        u_img: "../../../public/static/Cesium/a.jpg",
                         u_time: 0.0
                     },
                     source: `

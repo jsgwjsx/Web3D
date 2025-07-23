@@ -3,7 +3,7 @@ import {lon2xyz} from './earth'
 
 var geometry = new THREE.PlaneGeometry(1,1)
 var texloader = new THREE.TextureLoader()
-var texture = texloader.load('/model/example/Basic_07/标注.png')
+var texture = texloader.load('/static/model/example/Basic_07/标注.png')
 
 function createPointMesh(R,lon,lat){
     var material = new THREE.MeshBasicMaterial({

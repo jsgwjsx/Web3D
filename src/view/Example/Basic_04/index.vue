@@ -12,7 +12,7 @@
         <!-- 设置一个关闭按钮 -->
         <div style="position:relative;">
             <div style="position: absolute;left: -30px;top: 10px;">
-                <img id="close" src="/model/example/Basic_04/关闭.png" alt="" width="18" style="cursor: pointer;"
+                <img id="close" src="/static/model/example/Basic_04/关闭.png" alt="" width="18" style="cursor: pointer;"
                     v-on:click="close">
             </div>
         </div>
@@ -20,16 +20,16 @@
 
     <div class="pos">
         <div class="bu" v-on:click="toggleColor('black')">
-            <img src="/model/example/Basic_04/幻夜黑.png" alt="">
+            <img src="/static/model/example/Basic_04/幻夜黑.png" alt="">
         </div>
         <div class="bu" v-on:click="toggleColor('blue')">
-            <img src="/model/example/Basic_04/极光蓝.png" alt="">
+            <img src="/static/model/example/Basic_04/极光蓝.png" alt="">
         </div>
         <div class="bu" v-on:click="toggleColor('purple')">
-            <img src="/model/example/Basic_04/极光紫.png" alt="">
+            <img src="/static/model/example/Basic_04/极光紫.png" alt="">
         </div>
         <div class="bu" v-on:click="toggleColor('red')">
-            <img src="/model/example/Basic_04/珊瑚红.png" alt="">
+            <img src="/static/model/example/Basic_04/珊瑚红.png" alt="">
         </div>
     </div>
 </template>
@@ -58,7 +58,7 @@ function close() {
     color: white;
     font-weight: 700;
     line-height: 30px;
-    background-image: url('/public/model/example/Basic_03/信息背景.png');
+    background-image: url('/public/static/model/example/Basic_03/信息背景.png');
     background-size: 100% 100%;
 
 }

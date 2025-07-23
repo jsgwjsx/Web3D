@@ -35,7 +35,7 @@ onMounted(() => {
     })
     viewer.scene.debugShowFramesPerSecond = true //显示fps
     
-    var geojson = Cesium.GeoJsonDataSource.load('../../../public/Cesium/province.json',{})
+    var geojson = Cesium.GeoJsonDataSource.load('../../../public/static/Cesium/province.json',{})
     geojson.then(function (dataSource){
         viewer.dataSources.add(dataSource)
         //对单个实体进行设置
@@ -45,7 +45,7 @@ onMounted(() => {
             //对每个entity修改material
             var entity = entities[i]
             //修改图片
-            entity.billboard.image = '../../../public/Cesium/a.jpg',
+            entity.billboard.image = '../../../public/static/Cesium/a.jpg',
             entity.billboard.scale = 0.01
             console.log(entity.properties)
             //添加注记

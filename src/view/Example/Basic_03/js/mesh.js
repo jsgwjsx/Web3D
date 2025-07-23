@@ -13,7 +13,7 @@ draco.setDecoderPath('/draco/')
 var granaryArr = [] //所有粮仓模型对象集合
 const loader = new GLTFLoader()
 loader.setDRACOLoader(draco)
-loader.load('/model/example/Basic_03/model.glb', (gltf) => {
+loader.load('/static/model/example/Basic_03/model.glb', (gltf) => {
     //批量修改材质
     gltf.scene.traverse(function (object) {
       

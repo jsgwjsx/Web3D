@@ -3,7 +3,7 @@ import config from './config'
 
 var R = config.R;//地球半径
 var textureLoader = new THREE.TextureLoader()
-var texture = textureLoader.load('/model/example/Basic_07/地球光圈.png')
+var texture = textureLoader.load('/static/model/example/Basic_07/地球光圈.png')
 var spriteMaterial = new THREE.SpriteMaterial({
     map:texture,
     transparent:0.5

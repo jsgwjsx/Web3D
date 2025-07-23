@@ -16,7 +16,7 @@ linegroup.position.z += 1.0
 const loader = new THREE.FileLoader();
 loader.setResponseType('json')
 //地图本体
-loader.load('/model/example/Basic_06/GeoJSON数据/world.json', function (data) {
+loader.load('/static/model/example/Basic_06/GeoJSON数据/world.json', function (data) {
 
   data.features.forEach(function (area) {
     // "Polygon"：国家area有一个封闭轮廓
@@ -33,7 +33,7 @@ loader.load('/model/example/Basic_06/GeoJSON数据/world.json', function (data) 
 group.add(linegroup)
 group.add(shapegroup)
 
-loader.load('/model/example/Basic_06/非GeoJSON数据/人口密度.json', function (data) {
+loader.load('/static/model/example/Basic_06/非GeoJSON数据/人口密度.json', function (data) {
   var coord = data.population
   var max = 500
   var color1 = new THREE.Color(0x229977);

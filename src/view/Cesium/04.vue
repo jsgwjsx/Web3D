@@ -50,12 +50,12 @@ onMounted(() => {
     viewer.zoomTo(entity)
     //2.照片材质ImageMaterialProperty
     entity.ellipse.material = new Cesium.ImageMaterialProperty({
-        image: '../../../public/Cesium/a.jpg',
+        image: '../../../public/static/Cesium/a.jpg',
         //color:Cesium.Color.BLUE,
         repeat: new Cesium.Cartesian2(4, 4),
     })
     //也可以直接
-    entity.ellipse.material = '../../../public/Cesium/a.jpg'
+    entity.ellipse.material = '../../../public/static/Cesium/a.jpg'
     //3.棋盘纹理(两种颜色交错分布)CheckerboardMaterialProperty
     entity.ellipse.material = new Cesium.CheckerboardMaterialProperty({
         evenColor: Cesium.Color.WHITE,//默认为白色，棋盘的第一个颜色

@@ -59,7 +59,7 @@ onMounted(() => {
             type: 'rainbow',
             uniforms: {
                 u_time: 0.0,
-                u_img: '../../../public/Cesium/colors1.png'
+                u_img: '../../../public/static/Cesium/colors1.png'
             },
             source: `
             uniform sampler2D u_img;

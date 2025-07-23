@@ -22,7 +22,7 @@ const DirectionLight = new THREE.DirectionalLight(0xffffff, 1.0, 0.0)
 DirectionLight.position.set(100, 100, 60)
 scene.add(DirectionLight)
 
-const loader = new GLTFLoader().load('/model/16/工厂.glb', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/16/工厂.glb', (gltf) => {
     scene.add(gltf.scene)
     console.log('动画数据', gltf.animations);
     //包含关键帧动画的模型作为参数创建一个播放器,这个模型不一定是
@@ -41,7 +41,7 @@ const loader = new GLTFLoader().load('/model/16/工厂.glb', (gltf) => {
     }
     loop();
 })
-const loader1 = new GLTFLoader().load('/model/16/机械装配动画.glb', (gltf) => {
+const loader1 = new GLTFLoader().load('/static/model/16/机械装配动画.glb', (gltf) => {
     scene.add(gltf.scene)
     gltf.scene.position.set(0,50,0)
     console.log('动画数据', gltf.animations);

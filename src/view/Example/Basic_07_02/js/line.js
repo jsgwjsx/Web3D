@@ -8,7 +8,7 @@ function countryLine(R) {
   loader.setResponseType('json');
   var group = new THREE.Group();// 组对象mapGroup是所有国家边界父对象
   // 异步加载包含世界各个国家边界坐标的GeoJSON文件：world.json
-  loader.load('/model/example/Basic_07/world.json', function (data) {
+  loader.load('/static/model/example/Basic_07/world.json', function (data) {
     var allPointArr = []
     // 访问所有国家边界坐标数据：data.features
     data.features.forEach(function (country) {

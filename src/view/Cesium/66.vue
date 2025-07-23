@@ -138,7 +138,7 @@ onMounted(() => {
             material: new PolylineTrailLinkMaterialProperty({
                 color: Cesium.Color.ORANGE.withAlpha(0.8),
                 duration: 300,
-                imgurl: "../../../public/Cesium/arrow2.jpg"
+                imgurl: "../../../public/static/Cesium/arrow2.jpg"
             })
         },
     });

@@ -50,7 +50,7 @@ onMounted(async() => {
         "west"
     );
     const car = await Cesium.Model.fromGltfAsync({
-        url: "../../../public/Cesium/ferrari.glb",
+        url: "../../../public/static/Cesium/ferrari.glb",
         modelMatrix: Cesium.Transforms.headingPitchRollToFixedFrame(
             position,
             headingPositionRoll,

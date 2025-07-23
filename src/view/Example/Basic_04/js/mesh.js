@@ -17,12 +17,12 @@ loader.setDRACOLoader(draco)
 var sprite ;
 
 var textureCube = new THREE.CubeTextureLoader()
-  .setPath('/model/example/Basic_04/Park3Med/')
+  .setPath('/static/model/example/Basic_04/Park3Med/')
   .load(['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg',])
 
 var mesh;
 
-loader.load('/model/example/Basic_04/手机.gltf', (gltf) => {
+loader.load('/static/model/example/Basic_04/手机.gltf', (gltf) => {
   group.add(gltf.scene)
   mesh = gltf.scene.getObjectByName('手机');//找到手机Mesh
   // console.log('mesh', mesh);
@@ -32,13 +32,13 @@ loader.load('/model/example/Basic_04/手机.gltf', (gltf) => {
     // color:0xffffff,
     metalness: 1.0,//Mesh表面金属度，默认值0.5
     roughness: 1.0,//Mesh表面粗糙度，默认值0.5
-    map: texLoader.load("/model/example/Basic_04/basecolor.png"), //颜色贴图
+    map: texLoader.load("/static/model/example/Basic_04/basecolor.png"), //颜色贴图
     // 金属度、粗糙度贴图表示的值会和金属度、粗糙度分别相乘
-    roughnessMap: texLoader.load("/model/example/Basic_04/roughness.png"), //粗糙度贴图
-    metalnessMap: texLoader.load("/model/example/Basic_04/metallic.png"), //金属度贴图
-    normalMap: texLoader.load("/model/example/Basic_04/normal.png"), //法线贴图
+    roughnessMap: texLoader.load("/static/model/example/Basic_04/roughness.png"), //粗糙度贴图
+    metalnessMap: texLoader.load("/static/model/example/Basic_04/metallic.png"), //金属度贴图
+    normalMap: texLoader.load("/static/model/example/Basic_04/normal.png"), //法线贴图
     // 相机镜头等位置需要设置半透明效果(设置alphaMap和transparent属性)
-    alphaMap: texLoader.load("/model/example/Basic_04/opacity.png"),//alpha贴图
+    alphaMap: texLoader.load("/static/model/example/Basic_04/opacity.png"),//alpha贴图
     transparent: true, //使用alphaMap，注意开启透明计算
     envMap: textureCube,
     envMapIntensity: 0.9

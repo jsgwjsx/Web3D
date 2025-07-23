@@ -486,12 +486,12 @@ onMounted(async () => {
         //底图选择器
         baseLayerPicker: false,
         //1. 通过baseLayer在viewer内部中添加地图
-        // baseLayer: new Cesium.ImageryLayer(new Cesium.UrlTemplateImageryProvider({
-        //     url: ' http://webrd01.is.autonavi.com/appmaptile?&scale=1&lang=zh_cn&style=8&x={x}&y={y}&z={z}',
-        //     minimumLevel: 1,
-        //     maximumLevel: 18
-        // })
-        // )
+        baseLayer: new Cesium.ImageryLayer(new Cesium.UrlTemplateImageryProvider({
+            url: ' http://webrd01.is.autonavi.com/appmaptile?&scale=1&lang=zh_cn&style=8&x={x}&y={y}&z={z}',
+            minimumLevel: 1,
+            maximumLevel: 18
+        })
+        ),
         terrain: Cesium.Terrain.fromWorldTerrain(),
     })
     viewer.scene.debugShowFramesPerSecond = true //显示fps
@@ -503,7 +503,7 @@ onMounted(async () => {
     const config = {
         minElevation: 1153.0408311859962,//最小高程
         maxElevation: 3158.762303474051,//最大高程
-        url: "/public/Cesium/1724136544296.png",
+        url: "/static/Cesium/1724136544296.png",
         center: [-119.5509508318, 37.7379837881],
     };
 
@@ -528,7 +528,7 @@ onMounted(async () => {
 
     const terrainInfo = await getImageSource(viewer, extent, 2048, 2048); // getImageSource() await getImage(viewer, extent);
     const noise = await Cesium.Resource.fetchImage({
-        url: "/public/Cesium/texture4.png",
+        url: "/static/Cesium/texture4.png",
     });
     const test = new Erosion({
         viewer,

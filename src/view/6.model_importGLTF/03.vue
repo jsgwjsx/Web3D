@@ -28,7 +28,7 @@ scene.add(light)
 
 //创建一个gltf模型加载器对象
 const gltfloader = new GLTFLoader()
-gltfloader.load('/model/工厂.gltf',function(gltf){
+gltfloader.load('/static/model/工厂.gltf',function(gltf){
     //获取一个gltf对象，将对象.scene加载进scene中
     scene.add(gltf.scene)
 })
@@ -36,7 +36,7 @@ gltfloader.load('/model/工厂.gltf',function(gltf){
 //添加球面模型
 const geometry = new THREE.SphereGeometry(50)
 const loader = new THREE.TextureLoader()
-const texture = loader.load('/earth.jpg')
+const texture = loader.load('/static/earth.jpg')
 //设置texture的编码方式
 texture.encoding = THREE.sRGBEncoding;
 const material = new THREE.MeshLambertMaterial({

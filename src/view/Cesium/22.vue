@@ -49,7 +49,7 @@ onMounted(() => {
 <img\
   width="50{ac3c4da2cd0600a7fb5dd7ece3d30a0eed29da11cf2830143610191d982c65a1}"
   style="float:left; margin: 0 1em 1em 0;"
-  src="../../../public/Cesium/a.jpg"/>
+  src="../../../public/static/Cesium/a.jpg"/>
 <p>
   Wyoming is a state in the mountain region of the Western 
   United States.

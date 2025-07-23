@@ -7,7 +7,7 @@ import twin from './js/twin'
 import { onUnmounted } from 'vue';
 
 //加载gltf模型
-twin.loader.load('/model/example/Basic_01/收费站Draco.glb', (gltf) => {
+twin.loader.load('/static/model/example/Basic_01/收费站Draco.glb', (gltf) => {
      twin.scene.add(gltf.scene)
 })
 twin.renderer.outputEncoding = THREE.sRGBEncoding

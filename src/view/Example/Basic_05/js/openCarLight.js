@@ -9,7 +9,7 @@ import { Lensflare,LensflareElement } from 'three/examples/jsm/objects/Lensflare
 
 var texLoader = new THREE.TextureLoader();
 // // 用于镜头光晕的纹理对象
-var texture = texLoader.load("/model/example/Basic_05/lensflare.jpg");
+var texture = texLoader.load("/static/model/example/Basic_05/lensflare.jpg");
 
 // 创建两个镜头光晕Lensflare对象，分别用来模拟车前面左右两个车灯的发光效果，具体位置查看model.js文件
 var lensflareElement = new LensflareElement(texture, 600, 0, new THREE.Color(0xffffff)); //600:设置光晕像素大小

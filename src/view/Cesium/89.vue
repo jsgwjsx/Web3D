@@ -549,7 +549,7 @@ void main()
                 u_time: function () {
                     return ((new Date()).getTime() - _time) * 0.001;
                 },
-                iChannel0: "../../../public/Cesium/fire.png",
+                iChannel0: "../../../public/static/Cesium/fire.png",
                 // iChannel1: "ichannel0.png"
             }
         });

@@ -26,7 +26,7 @@ DirectionLight.position.set(100, 100, 60)
 scene.add(DirectionLight)
 
 //加载数据并播放gltf中的动画
-const loader = new GLTFLoader().load('/model/16/工厂.glb', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/16/工厂.glb', (gltf) => {
     scene.add(gltf.scene)
     console.log('动画数据', gltf.animations);
     const mixer = new THREE.AnimationMixer(gltf.scene)

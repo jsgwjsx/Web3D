@@ -562,7 +562,7 @@ out_FragColor.rgb = mix( out_FragColor.rgb, col.xyz, col.a );
                 u_time: function () {
                     return ((new Date()).getTime() - _time) * 0.001;
                 },
-                iChannel0: "../../../public/Cesium/fire.png",
+                iChannel0: "../../../public/static/Cesium/fire.png",
             }
         });
         viewer.scene.postProcessStages.add(ScanPostStage);

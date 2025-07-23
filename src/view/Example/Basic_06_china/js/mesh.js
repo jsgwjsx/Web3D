@@ -19,7 +19,7 @@ const mapgroup = new THREE.Group()
 linegroup.position.z += 2.3
 const loader = new THREE.FileLoader();
 loader.setResponseType('json')
-loader.load('/model/example/Basic_06/非GeoJSON数据/gdp.json',function(data){
+loader.load('/static/model/example/Basic_06/非GeoJSON数据/gdp.json',function(data){
   var gdpObj = {}
   var color1 = new THREE.Color(0xffffff);
   var color2 = new THREE.Color(0xff0000);
@@ -29,7 +29,7 @@ loader.load('/model/example/Basic_06/非GeoJSON数据/gdp.json',function(data){
     gdpObj[obj.name] = gdp
   })
   //加载一个文本文件，并把结果输出到控制台上
-loader.load('/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data) {
+loader.load('/static/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data) {
 
   data.features.forEach(function (area) {
     // "Polygon"：国家area有一个封闭轮廓

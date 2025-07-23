@@ -29,7 +29,7 @@ let currentAction;//当前的action
 const actionObj = {};//包含所有动作action
 
 //加载gltf模型
-twin.loader.load('/model/example/Basic_02/人.glb', (gltf) => {
+twin.loader.load('/static/model/example/Basic_02/人.glb', (gltf) => {
     twin.scene.add(gltf.scene)
     const mixer = new THREE.AnimationMixer(gltf.scene);
     processClip(gltf, mixer)

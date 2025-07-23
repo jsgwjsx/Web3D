@@ -41,7 +41,7 @@ const material = new THREE.MeshLambertMaterial({
     color: 0x009999,
 });
 
-const loader = new GLTFLoader().load('/model/工厂.gltf', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/工厂.gltf', (gltf) => {
     scene.add(gltf.scene)
 })
 

@@ -36,7 +36,7 @@ scene.add(light)
 
 //创建一个gltf模型加载器对象
 const gltfloader = new GLTFLoader()
-gltfloader.load('/model/金属.glb',function(gltf){
+gltfloader.load('/static/model/金属.glb',function(gltf){
     //设置模型金属度与粗糙度
     gltf.scene.traverse((obj)=>{
         if(obj.isMesh){

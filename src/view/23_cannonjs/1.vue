@@ -20,7 +20,7 @@ const axesHelper = new THREE.AxesHelper(300);
 scene.add(axesHelper);
 
 //设置音频
-const audio = new Audio('/碰撞声.wav');
+const audio = new Audio('/static/碰撞声.wav');
 
 const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light)
@@ -82,7 +82,7 @@ mesh.position.y = 1;
 
 // 设置网格地面
 const planeGeometry = new THREE.PlaneGeometry(2, 2);
-const texture = new THREE.TextureLoader().load('/瓷砖.jpg');
+const texture = new THREE.TextureLoader().load('/static/瓷砖.jpg');
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set(3, 3);

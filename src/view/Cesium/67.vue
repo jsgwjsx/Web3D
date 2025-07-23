@@ -116,7 +116,7 @@ onMounted(() => {
                 fabric: {
                     type: "Image",
                     uniforms: {
-                        image: "../../../public/Cesium/Flag.png",
+                        image: "../../../public/static/Cesium/Flag.png",
                     },
                 },
             }),

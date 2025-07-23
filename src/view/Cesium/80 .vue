@@ -2,7 +2,7 @@
     <div>
         <div id="map"></div>
         <video ref="vide" autoplay loop crossorigin controls>
-            <source src="../../../public/Cesium/vedio.mp4" type="video/mp4">
+            <source src="../../../public/static/Cesium/vedio.mp4" type="video/mp4">
         </video>
     </div>
 </template>

@@ -83,7 +83,7 @@ let body;
 
 // 设置网格地面
 const planeGeometry = new THREE.PlaneGeometry(20, 20);
-const texture = new THREE.TextureLoader().load('/瓷砖.jpg');
+const texture = new THREE.TextureLoader().load('/static/瓷砖.jpg');
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set(3, 3);
@@ -97,7 +97,7 @@ planeMesh.rotateX(-Math.PI / 2);
 scene.add(planeMesh)
 
 const loader = new GLTFLoader();
-const gltf = loader.load("/model/箱子.glb", (gltf) => {
+const gltf = loader.load("/static/model/箱子.glb", (gltf) => {
     mesh = gltf.scene;//获取箱子网格模型
     mesh.position.y = 10;
 

@@ -8,7 +8,7 @@ function createSignalMesh() {
     geometry.translate(-L / 2, 0, 0);
     geometry.rotateZ(Math.PI / 2);
     var material = new THREE.MeshLambertMaterial({
-      map: texLoad.load('/model/example/Basic_08/信号波.png'),
+      map: texLoad.load('/static/model/example/Basic_08/信号波.png'),
       color: 0xffff00, //设置颜色
       transparent: true, //允许透明计算
       side: THREE.DoubleSide,

@@ -26,14 +26,14 @@ const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light)
 
 const loader = new THREE.TextureLoader()
-const texture = loader.load('/黑色.png')
+const texture = loader.load('/static/黑色.png')
 //是否翻转纹理贴图
 texture.flipY = false;
 //设置texture的编码方式
 texture.encoding = THREE.sRGBEncoding;
 //创建一个gltf模型加载器对象
 const gltfloader = new GLTFLoader()
-gltfloader.load('/model/手机模型.glb',function(gltf){
+gltfloader.load('/static/model/手机模型.glb',function(gltf){
     //修改模型贴图
     gltf.scene.children[0].material.map = texture
     //获取一个gltf对象，将对象.scene加载进scene中

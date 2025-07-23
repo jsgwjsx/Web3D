@@ -27,7 +27,7 @@ scene.add(light)
 
 //创建一个gltf模型加载器对象
 const gltfloader = new GLTFLoader()
-gltfloader.load('/model/工厂.gltf',function(gltf){
+gltfloader.load('/static/model/工厂.gltf',function(gltf){
    
     //获取name为水面的模型对象
     var waterfall = gltf.scene.getObjectByName('水面')

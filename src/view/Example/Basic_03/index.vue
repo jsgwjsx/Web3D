@@ -3,11 +3,11 @@
         style="visibility:hidden;width:500px;height:400px;position: absolute;color: #fff;z-index: 2;font-size: 16px;">
         <div style="position:relative;">
             <div style="position: absolute;left: 0px;top: 0px;">
-                <img src="/model/example/Basic_03/信息背景.png" alt="" style="width:400px;opacity: 1.0;">
+                <img src="/static/model/example/Basic_03/信息背景.png" alt="" style="width:400px;opacity: 1.0;">
             </div>
             <div id="granaryName" style="position:absolute;left:25px;top:40px;font-size:16px">平房仓 P_01</div>
             <div style="position:absolute;left:290px;top:25px">
-                <img src="/model/example/Basic_03/温度.png" alt="" style="width:50px;">
+                <img src="/static/model/example/Basic_03/温度.png" alt="" style="width:50px;">
             </div>
 
             <div style="position:absolute;left:330px;top:40px">
@@ -17,7 +17,7 @@
                 <span id="grain">红豆</span>(吨)
             </div>
             <div style="position:absolute;left:80px;top:85px;font-size:60px;color:#00ffff;vertical-align:middle">
-                <img id="grainImg" src="/model/example/Basic_03/豆子/红豆.png" alt="" style="width:60px;">
+                <img id="grainImg" src="/static/model/example/Basic_03/豆子/红豆.png" alt="" style="width:60px;">
             </div>
             <div style="position:absolute;left:155px;top:80px;font-size:60px;color:#00ffff;vertical-align:middle">
                 <span id="weight">3600</span>t
@@ -81,7 +81,7 @@ addEventListener('click', (event) => {
     color: white;
     font-weight: 700;
     line-height: 30px;
-    background-image: url('/public/model/example/Basic_03/信息背景.png');
+    background-image: url('/public/static/model/example/Basic_03/信息背景.png');
     background-size: 100% 100%;
 
 }

@@ -13,11 +13,11 @@ var openSound = new THREE.Audio(listener);//开门音频对象
 var closeSound = new THREE.Audio(listener);//关门音频对象
 // 创建一个音频加载器对象
 var audioLoader = new THREE.AudioLoader();
-audioLoader.load('/model/example/Basic_05/open.wav', function (buffer) {
+audioLoader.load('/static/model/example/Basic_05/open.wav', function (buffer) {
     openSound.setBuffer(buffer);
     openSound.setVolume(0.4);//播放音量
 });
-audioLoader.load('/model/example/Basic_05/close.wav', function (buffer) {
+audioLoader.load('/static/model/example/Basic_05/close.wav', function (buffer) {
     closeSound.setBuffer(buffer);
     closeSound.setVolume(1.0);
 });

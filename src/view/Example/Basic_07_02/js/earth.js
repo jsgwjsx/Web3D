@@ -5,7 +5,7 @@ import config from './config'
 function createSphereMesh(R) {
   // TextureLoader创建一个纹理加载器对象，可以加载图片作为纹理贴图
   var textureLoader = new THREE.TextureLoader();
-  var texture = textureLoader.load('/model/example/Basic_07/earth.png');//加载纹理贴图
+  var texture = textureLoader.load('/static/model/example/Basic_07/earth.png');//加载纹理贴图
   var geometry = new THREE.SphereGeometry(R, 40, 40); //创建一个球体几何对象
   //材质对象Material
   var material = new THREE.MeshLambertMaterial({

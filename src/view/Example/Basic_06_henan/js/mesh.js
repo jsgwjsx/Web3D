@@ -18,7 +18,7 @@ const loader = new THREE.FileLoader();
 loader.setResponseType('json')
 
 // 加载GDP数据
-loader.load('/model/example/Basic_06/GeoJSON数据/gdp.json', function (data) {
+loader.load('/static/model/example/Basic_06/GeoJSON数据/gdp.json', function (data) {
   var gdpObj = {};//每个省份的名字作为属性，属性值是国家对应GDP
   var color1 = new THREE.Color(0xffffff);
   var color2 = new THREE.Color(0xff8888); //GDP最高对应颜色
@@ -29,7 +29,7 @@ loader.load('/model/example/Basic_06/GeoJSON数据/gdp.json', function (data) {
   })
 
   //  加载 "河南.json"，结构和./china.json 一样，地级市对应省份
-  loader.load('/model/example/Basic_06/GeoJSON数据/河南.json', function (data2) {
+  loader.load('/static/model/example/Basic_06/GeoJSON数据/河南.json', function (data2) {
     // 访问所有子行政区(地级市)边界坐标数据：data.features
     data2.features.forEach(function (area) {
       // "Polygon"：省份area有一个封闭轮廓
@@ -66,7 +66,7 @@ loader.load('/model/example/Basic_06/GeoJSON数据/gdp.json', function (data) {
   })
 })
 //加载一个文本文件，并把结果输出到控制台上
-// loader.load('/model/example/Basic_06/GeoJSON数据/河南.json', function (data) {
+// loader.load('/static/model/example/Basic_06/GeoJSON数据/河南.json', function (data) {
 
 //   data.features.forEach(function (area) {
 //     // "Polygon"：国家area有一个封闭轮廓

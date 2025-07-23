@@ -83,7 +83,12 @@ function initCesium() {
         navigationHelpButton: false,//帮助按钮
         navigationInstructionsInitiallyVisible: false,//不知道什么控件
         selectionIndicator: false,//不知道什么控件
-
+          baseLayer: new Cesium.ImageryLayer(new Cesium.UrlTemplateImageryProvider({
+            url: ' http://webrd01.is.autonavi.com/appmaptile?&scale=1&lang=zh_cn&style=8&x={x}&y={y}&z={z}',
+            minimumLevel: 1,
+            maximumLevel: 18
+        })
+    ),
     })
 }
 </script>

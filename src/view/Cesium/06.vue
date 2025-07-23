@@ -35,7 +35,7 @@ onMounted(() => {
     })
     viewer.scene.debugShowFramesPerSecond = true //显示fps
     // //加载数据，返回一个promise
-    // var promise = Cesium.GeoJsonDataSource.load('../../../public/Cesium/shanghai.json')
+    // var promise = Cesium.GeoJsonDataSource.load('../../../public/static/Cesium/shanghai.json')
     // promise.then(datasource => {
 
     //     //添加数据到viewer中
@@ -44,7 +44,7 @@ onMounted(() => {
     //     viewer.zoomTo(datasource)
     // })
     //加载geojson
-    var entities = Cesium.GeoJsonDataSource.load('../../../public/Cesium/shanghai.json', {
+    var entities = Cesium.GeoJsonDataSource.load('../../../public/static/Cesium/shanghai.json', {
         //设置样式
         stroke: Cesium.Color.HOTPINK,
         fill: Cesium.Color.PINK,

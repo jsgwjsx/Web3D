@@ -39,14 +39,14 @@ const group = new THREE.Group()
 var loader = new THREE.FileLoader();
 loader.setResponseType('json')
 group.add(flyGroup)
-loader.load('/model/example/Basic_08/上海外滩.json', function (data) {
+loader.load('/static/model/example/Basic_08/上海外滩.json', function (data) {
   var buildGroup= ExtrudeMesh(data)
   group.add(buildGroup);
   //球中心点
   getCenter(buildGroup)
 });
 // 黄浦江
-loader.load('./model/example/Basic_08/黄浦江.json', function (data) {
+loader.load('./static/model/example/Basic_08/黄浦江.json', function (data) {
   var buildGroup = new THREE.Group(); //作为所有每栋楼Mesh的父对象
   data.features.forEach(build => {
     if (build.geometry) {
@@ -64,7 +64,7 @@ loader.load('./model/example/Basic_08/黄浦江.json', function (data) {
 });
 var loader = new GLTFLoader(); //创建一个GLTF加载器
 //设置线框模型
-loader.load("/model/example/Basic_08/上海外滩.glb", function (gltf) { //gltf加载成功后返回一个对象
+loader.load("/static/model/example/Basic_08/上海外滩.glb", function (gltf) { //gltf加载成功后返回一个对象
        // 单独设置东方明珠材质
   var dongfang = gltf.scene.getObjectByName('东方明珠');
   dongfang.position.set(13524900.5,  3664000.375,  0.1)

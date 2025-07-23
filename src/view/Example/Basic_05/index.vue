@@ -1,38 +1,38 @@
 <template>
  <div style="position: absolute;right: 10px;top:10px;">
     <a class="gou" style="" href="https://www.bydauto.com.cn/news-id-2775.html">
-      <img src="/model/example/Basic_05/购买.png" alt="" width="24" style="vertical-align: middle;">
+      <img src="/static/model/example/Basic_05/购买.png" alt="" width="24" style="vertical-align: middle;">
       <span>购买</span>
     </a>
 
     <a class="gou" style="margin-top:10px;" href="https://www.bydauto.com.cn/news-id-2775.html">
-      <img src="/model/example/Basic_05/试驾.png" alt="" width="24" style="vertical-align: middle;">
+      <img src="/static/model/example/Basic_05/试驾.png" alt="" width="24" style="vertical-align: middle;">
       <span>试驾</span>
     </a>
 
   </div>
 
   <div id="color" style="">
-    <div class="colorChoose" id="color1"><img src="/model/example/Basic_05/绿.jpg"></div>
-    <div class="colorChoose" id="color2"><img src="/model/example/Basic_05/灰.jpg"></div>
-    <div class="colorChoose" id="color3"><img src="/model/example/Basic_05/红.jpg"></div>
-    <div class="colorChoose" id="color4"><img src="/model/example/Basic_05/黑.jpg"></div>
-    <div class="colorChoose" id="color5"><img src="/model/example/Basic_05/白.jpg"></div>
+    <div class="colorChoose" id="color1"><img src="/static/model/example/Basic_05/绿.jpg"></div>
+    <div class="colorChoose" id="color2"><img src="/static/model/example/Basic_05/灰.jpg"></div>
+    <div class="colorChoose" id="color3"><img src="/static/model/example/Basic_05/红.jpg"></div>
+    <div class="colorChoose" id="color4"><img src="/static/model/example/Basic_05/黑.jpg"></div>
+    <div class="colorChoose" id="color5"><img src="/static/model/example/Basic_05/白.jpg"></div>
   </div>
   <div id="changeColor">
-    <img src="/model/example/Basic_05/变色.png" alt="" width="24" style="vertical-align: middle;">
+    <img src="/static/model/example/Basic_05/变色.png" alt="" width="24" style="vertical-align: middle;">
     <span id="changeColorText">停止变色</span>
   </div>
 
   <div id="rotateAudio">
     <div id="rotate">
-      <img id="rotateimg" src="/model/example/Basic_05/旋转.png" alt="" width="24" style="vertical-align: middle;">
+      <img id="rotateimg" src="/static/model/example/Basic_05/旋转.png" alt="" width="24" style="vertical-align: middle;">
     </div>
     <div id="audio" style="margin-top: 20px;">
-      <img id="audioimg" src="/model/example/Basic_05/关闭声音.png" alt="" width="24" style="vertical-align: middle;">
+      <img id="audioimg" src="/static/model/example/Basic_05/关闭声音.png" alt="" width="24" style="vertical-align: middle;">
     </div>
     <div style="margin-top: 20px;">
-      <img id="light" src="/model/example/Basic_05/开车灯.png" alt="" width="24" style="vertical-align: middle;">
+      <img id="light" src="/static/model/example/Basic_05/开车灯.png" alt="" width="24" style="vertical-align: middle;">
     </div>
   </div>
 </template>
@@ -55,11 +55,11 @@ onMounted(()=>{
       if (audio) {
         backgroundAudio.pause();
         audio = false;
-        document.getElementById('audioimg').src = '/model/example/Basic_05/关闭声音.png';
+        document.getElementById('audioimg').src = '/static/model/example/Basic_05/关闭声音.png';
       } else {
         backgroundAudio.play();
         audio = true;
-        document.getElementById('audioimg').src = '/model/example/Basic_05/打开声音.png';
+        document.getElementById('audioimg').src = '/static/model/example/Basic_05/打开声音.png';
       }
     }
 
@@ -99,11 +99,11 @@ onMounted(()=>{
       if (rotate) {
         cancelAnimationFrame(rotateAnimation);
         rotate = false;
-        document.getElementById('rotateimg').src = '/model/example/Basic_05/停止旋转.png';
+        document.getElementById('rotateimg').src = '/static/model/example/Basic_05/停止旋转.png';
       } else {
         loop();
         rotate = true;
-        document.getElementById('rotateimg').src = '/model/example/Basic_05/旋转.png';
+        document.getElementById('rotateimg').src = '/static/model/example/Basic_05/旋转.png';
       }
       
     }
@@ -113,11 +113,11 @@ onMounted(()=>{
       if (light) {
         closeCarLight(); 
         light = false;
-        document.getElementById('light').src = '/model/example/Basic_05/开车灯.png';
+        document.getElementById('light').src = '/static/model/example/Basic_05/开车灯.png';
       } else {
         openCarLight();
         light = true;
-        document.getElementById('light').src = '/model/example/Basic_05/关车灯.png';
+        document.getElementById('light').src = '/static/model/example/Basic_05/关车灯.png';
       }
     }
 

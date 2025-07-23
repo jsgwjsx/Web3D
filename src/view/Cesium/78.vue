@@ -44,7 +44,7 @@ onMounted(() => {
     const hpr = new Cesium.HeadingPitchRoll(0, 0, 0);
     const fixedFrameTransform = Cesium.Transforms.localFrameToFixedFrameGenerator("north", "west");
 
-    let url = "../../../public/Cesium/fly.glb";
+    let url = "../../../public/static/Cesium/fly.glb";
     const textureUniformShader = new Cesium.CustomShader({
         uniforms: {},
         fragmentShaderText: `

@@ -5,7 +5,7 @@ import * as THREE from 'three';
 // 矩形平面网格模型设置背景透明的png贴图
 var geometry = new THREE.PlaneGeometry(1, 1); //默认在XOY平面上
 var textureLoader = new THREE.TextureLoader(); // TextureLoader创建一个纹理加载器对象
-var texture = textureLoader.load('/model/example/Basic_06/光圈贴图.png');
+var texture = textureLoader.load('/static/model/example/Basic_06/光圈贴图.png');
 var material = new THREE.MeshBasicMaterial({
   color:0x00ffff,
   map: texture,

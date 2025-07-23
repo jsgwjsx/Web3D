@@ -39,7 +39,7 @@ onMounted(() => {
         -123.0744619,
         44.0503706
     );
-    // const url = "../../../public/Cesium/fly.glb";
+    // const url = "../../../public/static/Cesium/fly.glb";
     // const entity = viewer.entities.add({
     //     name: url,
     //     position: position,
@@ -57,7 +57,7 @@ onMounted(() => {
         ),
         ellipsoid: {
             radii: new Cesium.Cartesian3(1.0, 1.0, 2.0),
-            material: "../../../public/Cesium/fire.png",
+            material: "../../../public/static/Cesium/fire.png",
         },
     });
 

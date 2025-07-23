@@ -2,7 +2,7 @@ import * as THREE from 'three'
 
 function CreatePointsTag(){
     var spriteMaterial = new THREE.SpriteMaterial({
-        map:new THREE.TextureLoader().load('/光点.png'),
+        map:new THREE.TextureLoader().load('/static/光点.png'),
         transparent:true
     })
     var sprite = new THREE.Sprite(spriteMaterial);

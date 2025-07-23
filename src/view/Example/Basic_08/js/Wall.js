@@ -18,7 +18,7 @@ material1.onBeforeCompile=function(shader){
         `)
     shader.fragmentShader = shader.fragmentShader.replace('	#include <output_fragment>', ouputFragment)
 }
-var texture = new THREE.TextureLoader().load('/model/example/Basic_08/流动.png')
+var texture = new THREE.TextureLoader().load('/static/model/example/Basic_08/流动.png')
 texture.wrapS = THREE.RepeatWrapping
 texture.wrapT = THREE.RepeatWrapping
 texture.repeat.set(100,1)

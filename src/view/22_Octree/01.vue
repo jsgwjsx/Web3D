@@ -31,7 +31,7 @@ scene.add(DirectionLight)
 const worldOctree = new Octree();
 
 
-const loader = new GLTFLoader().load('/model/地形.glb',(gltf)=>{
+const loader = new GLTFLoader().load('/static/model/地形.glb',(gltf)=>{
     scene.add(gltf.scene)
     //对模型进行分割，分割为一个一个的小的长方体空间，构成一个八叉树。
     worldOctree.fromGraphNode(gltf.scene)

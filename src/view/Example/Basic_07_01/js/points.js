@@ -9,7 +9,7 @@ var R = config.R;//地球半径
 var loader = new THREE.FileLoader();//three.js文件加载类FileLoader：封装了XMLHttpRequest
 loader.setResponseType('json');
 var group = new THREE.Group();
-loader.load('/model/example/Basic_07/数据.json', function (data) {
+loader.load('/static/model/example/Basic_07/数据.json', function (data) {
   var coordArr = data.points;//所有经纬度坐标数据
   var numArr = data.num;//所有点对应周边点数
   var numMax = numArr.slice().sort(compareNum)[numArr.length - 1];//数组复制并排序，然后获得最大值

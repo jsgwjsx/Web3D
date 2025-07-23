@@ -54,7 +54,7 @@ onMounted(() => {
                 fabric: {
                     type: 'cusmaterial',
                     uniforms: {
-                        u_img: "../../../public/Cesium/a.jpg",
+                        u_img: "../../../public/static/Cesium/a.jpg",
                         u_time: 0.0
                     },
                     source: `

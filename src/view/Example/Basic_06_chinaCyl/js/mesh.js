@@ -21,8 +21,8 @@ tagGroup.position.z += 0.1
 linegroup.position.z += 0.1
 const loader = new THREE.FileLoader();
 loader.setResponseType('json')
-loader.load('/model/example/Basic_06/非GeoJSON数据/gdp.json', function (data) {
-  loader.load('/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data2) {
+loader.load('/static/model/example/Basic_06/非GeoJSON数据/gdp.json', function (data) {
+  loader.load('/static/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data2) {
     //加载地图
     data2.features.forEach(function (area) {
       // "Polygon"：国家area有一个封闭轮廓

@@ -28,7 +28,7 @@ scene.add(light)
 
 //添加模型
 const loader = new GLTFLoader()
-loader.load('/model/地形.glb', (obj) => {
+loader.load('/static/model/地形.glb', (obj) => {
     //获取山体模型的几何体坐标
     const mesh = obj.scene.children[0]
     const count = mesh.geometry.attributes.position.count

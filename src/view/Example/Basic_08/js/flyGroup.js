@@ -10,7 +10,7 @@ var flyGroup = new THREE.Group()// 一架无人机
 var mixer = null; //声明一个混合器变量
 var loader = new GLTFLoader();
 var fly = null;
-loader.load('/model/example/Basic_08/fly.glb', function (gltf) {
+loader.load('/static/model/example/Basic_08/fly.glb', function (gltf) {
     fly = gltf.scene;
 
     // 三维场景默认单位是米，美术导出模型单位是厘米，需要缩小数字尺寸

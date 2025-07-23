@@ -47,7 +47,7 @@ const material = new THREE.MeshLambertMaterial({
     color: 0x009999,
 });
 
-const loader = new GLTFLoader().load('/model/工厂.glb', (gltf) => {
+const loader = new GLTFLoader().load('/static/model/工厂.glb', (gltf) => {
     scene.add(gltf.scene)
     console.log(gltf)
     const arr = ['设备A标注', '设备B标注']
@@ -198,7 +198,7 @@ onMounted(() => {
     text-align: center;
     color: #fff;
     font-size: 16px;
-    background-image: url('/标签箭头背景.png');
+    background-image: url('/static/标签箭头背景.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     pointer-events: none;

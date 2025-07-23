@@ -18,7 +18,7 @@ roadGroup.position.z += 0.2
 const loader = new THREE.FileLoader();
 loader.setResponseType('json')
 
-loader.load('/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data) {
+loader.load('/static/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.json', function (data) {
 
   data.features.forEach(function (area) {
     // "Polygon"：国家area有一个封闭轮廓
@@ -37,7 +37,7 @@ loader.load('/model/example/Basic_06/GeoJSON数据/其它GeoJSON/china-详细.js
 });
 
 
-loader.load('/model/example/Basic_06/非GeoJSON数据/微博签到数据.json', function (data) {
+loader.load('/static/model/example/Basic_06/非GeoJSON数据/微博签到数据.json', function (data) {
   var coord = data.coordinates
   var verticesArr = []
   for (var i = 0; i < coord.length; i += 2) {
@@ -52,7 +52,7 @@ loader.load('/model/example/Basic_06/非GeoJSON数据/微博签到数据.json', 
   var points = new THREE.Points(geometry,material)
   potGroup.add(points)
 })
-loader.load('/model/example/Basic_06/非GeoJSON数据/公交轨迹.json', function (data) {
+loader.load('/static/model/example/Basic_06/非GeoJSON数据/公交轨迹.json', function (data) {
   var coords = data.coordinates;//所有经纬度坐标数据
   var group = new THREE.Group();
   coords.forEach(function (coord) {

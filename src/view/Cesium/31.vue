@@ -73,7 +73,7 @@ onMounted(() => {
         );
         let animations;
         const model = await Cesium.Model.fromGltfAsync({
-            url: "../../../public/Cesium/fly.glb",
+            url: "../../../public/static/Cesium/fly.glb",
             modelMatrix: Cesium.Transforms.headingPitchRollToFixedFrame(
                 position,
                 headingPositionRoll,

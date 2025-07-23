@@ -83,7 +83,7 @@ let body;
 
 // 设置网格地面
 const planeGeometry = new THREE.PlaneGeometry(20, 20);
-const texture = new THREE.TextureLoader().load('/瓷砖.jpg');
+const texture = new THREE.TextureLoader().load('/static/瓷砖.jpg');
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set(3, 3);
@@ -97,7 +97,7 @@ planeMesh.rotateX(-Math.PI / 2);
 scene.add(planeMesh)
 world.addBody(groundBody)
 const loader = new GLTFLoader();
-const gltf = loader.load("/model/凸多面体.glb", (gltf) => {
+const gltf = loader.load("/static/model/凸多面体.glb", (gltf) => {
     mesh = gltf.scene.getObjectByName('多面体');//获取凸多面体网格模型
     mesh.position.y = 10;
 

@@ -26,7 +26,7 @@ scene.add(light)
 //创建贴图加载器对象
 const loader = new THREE.TextureLoader()
 //根据路径加载贴图
-const texture = loader.load('/earth.jpg')
+const texture = loader.load('/static/earth.jpg')
 
 const geometry = new THREE.PlaneGeometry(200,100);
 //目前没有设置uv坐标，是使用的geometry默认的贴图方式进行的贴图

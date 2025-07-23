@@ -35,7 +35,7 @@ onMounted(async() => {
     })
     viewer.scene.debugShowFramesPerSecond = true //显示fps
     const tileset = Cesium.Cesium3DTileset.fromUrl(
-        "../../../public/Cesium/3dtiles/tileset.json"
+        "../../../public/static/Cesium/3dtiles/tileset.json"
     );
     tileset.then((tileset) => {
         viewer.scene.primitives.add(tileset);

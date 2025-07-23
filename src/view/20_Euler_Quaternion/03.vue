@@ -37,11 +37,11 @@ const Target = new THREE.Vector3(0, H, 0)//设置无人机看向的方向
 
 //物体.quaternion.copy(四元数对象)，来实现四元数改变物体姿态
 //补充:three.js模型对象的角度.rotation和四元数.quaternion属性都是用来表示物体姿态角度的，只是表达形式不同而已，.rotation和.quaternion两个属性的值，一个改变，另一个也会同步改变。
-const loader1 = new GLTFLoader().load('/model/工厂.glb', (gltf) => {
+const loader1 = new GLTFLoader().load('/static/model/工厂.glb', (gltf) => {
     scene.add(gltf.scene)
 })
 
-const loader2 = new GLTFLoader().load('/model/无人机.glb', (gltf) => {
+const loader2 = new GLTFLoader().load('/static/model/无人机.glb', (gltf) => {
     scene.add(gltf.scene)
     const fly = gltf.scene
     fly.position.setY(50)

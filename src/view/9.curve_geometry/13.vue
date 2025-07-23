@@ -50,7 +50,7 @@ scene.add(mesh)
 
 //给模型也添加边缘线
 const loader = new GLTFLoader()
-loader.load('/model/建筑模型.gltf',(obj)=>{
+loader.load('/static/model/建筑模型.gltf',(obj)=>{
     scene.add(obj.scene)
     obj.scene.traverse((gltf)=>{
         if(gltf.type=='Mesh'){

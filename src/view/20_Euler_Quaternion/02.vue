@@ -44,7 +44,7 @@ const Bmesh = SphereCreate(B,0xff0000);
 scene.add(Bmesh)
 //物体.quaternion.copy(四元数对象)，来实现四元数改变物体姿态
 //补充:three.js模型对象的角度.rotation和四元数.quaternion属性都是用来表示物体姿态角度的，只是表达形式不同而已，.rotation和.quaternion两个属性的值，一个改变，另一个也会同步改变。
-const loader = new GLTFLoader().load('/model/飞机.glb',(gltf)=>{
+const loader = new GLTFLoader().load('/static/model/飞机.glb',(gltf)=>{
     scene.add(gltf.scene)
     const fly = gltf.scene
     fly.position.set(10,10,0)

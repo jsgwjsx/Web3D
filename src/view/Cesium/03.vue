@@ -54,7 +54,7 @@ onMounted(() => {
     }
 
     const tileset = Cesium.Cesium3DTileset.fromUrl(
-        '../../../public/Cesium/3dtiles/tileset.json',
+        '../../../public/static/Cesium/3dtiles/tileset.json',
         {
             maximumScreenSpaceError: 2, //最大的屏幕空间误差
             // modelMatrix: m  //可以在初始化的时候就配置矩阵进行偏移

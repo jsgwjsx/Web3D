@@ -25,7 +25,7 @@ scene.add(pointLight)
 const light = new THREE.AmbientLight(0xffffff, 1);
 scene.add(light)
 
-const loader =new GLTFLoader().load('/model/工厂.gltf',gltfSuccess)
+const loader =new GLTFLoader().load('/static/model/工厂.gltf',gltfSuccess)
 
 function gltfSuccess(gltf){
     scene.add(gltf.scene)

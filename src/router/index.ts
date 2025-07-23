@@ -637,6 +637,31 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Cesium_100',
         component: () =>import('../view/Cesium/100.vue')
       },
+      {
+        path: '101',
+        name: 'Cesium_101',
+        component: () =>import('../view/Cesium/101.vue')
+      },
+      {
+        path: '102',
+        name: 'Cesium_102',
+        component: () =>import('../view/Cesium/102.vue')
+      },
+      {
+        path: '103',
+        name: 'Cesium_103',
+        component: () =>import('../view/Cesium/103.vue')
+      },
+      {
+        path: '104',
+        name: 'Cesium_104',
+        component: () =>import('../view/Cesium/104.vue')
+      },
+      {
+        path: '105',
+        name: 'Cesium_105',
+        component: () =>import('../view/Cesium/105.vue')
+      },
     ]
   },
   {
@@ -1435,7 +1460,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/web3d'),
   routes,
 });
 let isRefreshing = false

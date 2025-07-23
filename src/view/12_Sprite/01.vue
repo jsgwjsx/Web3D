@@ -45,7 +45,7 @@ const mesh = new THREE.Mesh(plane,planematerial)
 scene.add(mesh)
 mesh.position.set(0,80,0)
 
-const texture = new THREE.TextureLoader().load('/光点.png')
+const texture = new THREE.TextureLoader().load('/static/光点.png')
 const spriteMaterials = new THREE.SpriteMaterial({
     map:texture,
     transparent:true

@@ -6,7 +6,7 @@
 <script setup>
 import * as Cesium from "cesium";
 import { onMounted } from 'vue'
-import customCyclinder from '../../../public/Cesium/Core/custom/CylinderGeometry'
+import customCyclinder from '../../../public/static/Cesium/Core/custom/CylinderGeometry'
 onMounted(() => {
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5OTNhNzM4Zi05OGM1LTQzNzgtOWY3OC1mMjkyMDRjNGQ2NWIiLCJpZCI6MjIwMDczLCJpYXQiOjE3MjQ5ODE0OTN9.xeCfpceKEj1anyoP4fLDosWa-0gNwB1fm-IDE7-uplc'
     var viewer = new Cesium.Viewer('map', {
@@ -43,7 +43,7 @@ onMounted(() => {
             topRadius: 1000,
             bottomRadius: 0,
             material: new Cesium.ImageMaterialProperty({
-                image: '../../../public/Cesium/earthMap.jpg',
+                image: '../../../public/static/Cesium/earthMap.jpg',
                 //transparent:true
             }),
             length: 700,
@@ -79,7 +79,7 @@ onMounted(() => {
         }),
         appearance: new Cesium.EllipsoidSurfaceAppearance({
             material: Cesium.Material.fromType('Image', {
-                image: '../../../public/Cesium/earthMap.jpg'
+                image: '../../../public/static/Cesium/earthMap.jpg'
             }),
             renderState: {
                 //关闭背面剔除

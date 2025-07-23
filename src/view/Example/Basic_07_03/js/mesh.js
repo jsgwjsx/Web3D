@@ -23,9 +23,9 @@ const Boxgroup = new THREE.Group()
 group.meshArr = [];//用于鼠标射线拾取
 var loader = new THREE.FileLoader()
 loader.setResponseType('json')
-loader.load('/model/example/Basic_07/首都经纬度.json', function (lonlat) {
-loader.load('/model/example/Basic_07/gdp.json', function (gdpdata) {
-    loader.load('/model/example/Basic_07/worldZh.json', function (data) {
+loader.load('/static/model/example/Basic_07/首都经纬度.json', function (lonlat) {
+loader.load('/static/model/example/Basic_07/gdp.json', function (gdpdata) {
+    loader.load('/static/model/example/Basic_07/worldZh.json', function (data) {
         var countryGdpColor = getCountryGdpColor(gdpdata);
         data.features.forEach(function (country) {
             // "Polygon"：国家country有一个封闭轮廓

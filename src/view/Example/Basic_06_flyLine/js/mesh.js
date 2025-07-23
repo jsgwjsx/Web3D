@@ -23,7 +23,7 @@ const loader = new THREE.FileLoader();
 loader.setResponseType('json')
 
   //加载地图模块与波纹效果
-loader.load('/model/example/Basic_06/GeoJSON数据/china.json', function (data) {
+loader.load('/static/model/example/Basic_06/GeoJSON数据/china.json', function (data) {
   //childrenName
   ChildrenNum = {}
   data.features.forEach(function (area) {
