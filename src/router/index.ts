@@ -867,6 +867,33 @@ const routes: Array<RouteRecordRaw> = [
       
     ]
   },
+   {
+    path: '/canvas',
+    name: 'canvas',
+    component: () => import('../Canvas.vue'),
+    children: [
+      {
+        path: '',
+        name: 'canvas00',
+        redirect: '/canvas/01'
+      },
+      {
+        path: '01',
+        name: 'canvas01',
+        component: () => import('../view/Canvas/01.vue')
+      },
+      {
+        path: '02',
+        name: 'canvas02',
+        component: () => import('../view/Canvas/02.vue')
+      },
+       {
+        path: '03',
+        name: 'canvas03',
+        component: () => import('../view/Canvas/03.vue')
+      },
+    ]
+  },
   {
     path: '/page',
     name: 'page',

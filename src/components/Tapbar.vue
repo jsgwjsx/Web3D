@@ -12,7 +12,7 @@ import router from '../router';
                 <template #title>
                     Threejs学习
                 </template>
-             
+
                 <el-sub-menu index="Three1">
                     <template #title>Threejs快速入门</template>
                     <el-menu-item index="/page/01">1.基本构成</el-menu-item>
@@ -250,226 +250,241 @@ import router from '../router';
                     </el-menu-item-group>
                 </el-sub-menu>
 
-   
+
             </el-sub-menu>
             <el-sub-menu index="2">
                 <template #title>Cesium学习</template>
                 <el-sub-menu index="Cesium1">
-                                <template #title>
-                                    Cesium入门
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/Cesium/01">1.初始化地图</el-menu-item>
-                                    <el-menu-item index="/Cesium/02">2.绘制形状(Entity与CZML)</el-menu-item>
-                                    <el-menu-item index="/Cesium/03">3.加载并控制3dtiles</el-menu-item>
-                                    <el-menu-item index="/Cesium/04">4.材质Material</el-menu-item>
-                                    <el-menu-item index="/Cesium/05">5.Camera控制</el-menu-item>
-                                    <el-menu-item index="/Cesium/06">6.加载geojson数据</el-menu-item>
-                                    <el-menu-item index="/Cesium/07">7.自定义形状-扇形</el-menu-item>
-                                    <el-menu-item index="/Cesium/08">8.polyline弧段类型</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="Cesium2">
-                                <template #title>
-                                    Cesium中级
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/Cesium/09">1.渐变纹理</el-menu-item>
-                                    <el-menu-item index="/Cesium/10">2.四种贴地线</el-menu-item>
-                                    <el-menu-item index="/Cesium/11">3.地球纹理</el-menu-item>
-                                    <el-menu-item index="/Cesium/12">4.CZML动态路径</el-menu-item>
-                                    <!-- <el-menu-item index="/Cesium/13">5.Heatmap热力图</el-menu-item> -->
-                                    <el-menu-item index="/Cesium/14">6.鹰眼图</el-menu-item>
-                                    <el-menu-item index="/Cesium/15">7.动态纹理-颜色</el-menu-item>
-                                    <el-menu-item index="/Cesium/16">8.Entity聚合</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="Cesium3">
-                                <template #title>
-                                    Cesium高级
-                                </template>
-                                <el-menu-item-group>
-                                    <el-scrollbar height="600px">
-                                    <el-menu-item index="/Cesium/17">1.Animation主题</el-menu-item>
-                                    <el-menu-item index="/Cesium/18">2.纯色地图</el-menu-item>
-                                    <el-menu-item index="/Cesium/19">3.连续飞行</el-menu-item>
-                                    <el-menu-item index="/Cesium/20">4.气泡窗口</el-menu-item>
-                                    <el-menu-item index="/Cesium/21">5.气泡探窗不受遮挡</el-menu-item>
-                                    <el-menu-item index="/Cesium/22">6.Entity选中效果修改</el-menu-item>
-                                    <el-menu-item index="/Cesium/23">7.限制地图范围</el-menu-item>
-                                    <el-menu-item index="/Cesium/24">8.Primitive类</el-menu-item>
-                                    <el-menu-item index="/Cesium/25">9.Primitive自定义形状</el-menu-item>
-                                    <el-menu-item index="/Cesium/26">10.ray射线</el-menu-item>
-                                    <el-menu-item index="/Cesium/27">11.水面特效</el-menu-item>
-                                    <el-menu-item index="/Cesium/28">12.自定义entity与primative动态纹理</el-menu-item>
-                                    <el-menu-item index="/Cesium/29">13.在原有的primitive基础上自定义形状</el-menu-item>
-                                    <el-menu-item index="/Cesium/30">14.模型Entity与primitive旋转</el-menu-item>
-                                    <el-menu-item index="/Cesium/31">15.多个模型朝向一个点</el-menu-item>
-                                    <el-menu-item index="/Cesium/32">16.多边形带孔</el-menu-item>
-                                    <el-menu-item index="/Cesium/33">17.geojson点样式</el-menu-item>
-                                    <el-menu-item index="/Cesium/34">18.Cesium粒子系统</el-menu-item>
-                                    <el-menu-item index="/Cesium/35">19.修改运动中物体朝向</el-menu-item>
-                                    <el-menu-item index="/Cesium/36">20.流动线</el-menu-item>
-                                    <el-menu-item index="/Cesium/37">21.虚线圆</el-menu-item>
-                                    <el-menu-item index="/Cesium/38">22.加载arcgis底图</el-menu-item>
-                                    <el-menu-item index="/Cesium/39">23.turf进行缓冲区计算</el-menu-item>
-                                    <el-menu-item index="/Cesium/40">24.显示多边形内底图</el-menu-item>
-                                    <el-menu-item index="/Cesium/41">25.纹理裁剪</el-menu-item>
-                                    <el-menu-item index="/Cesium/42">26.彩虹</el-menu-item>
-                                    <el-menu-item index="/Cesium/43">27.lookat效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/44">28.太极特效</el-menu-item>
-                                    <el-menu-item index="/Cesium/45">29.geojson设置水面材质</el-menu-item>
-                                    <el-menu-item index="/Cesium/46">30.射线拾取物体</el-menu-item>
-                                    <el-menu-item index="/Cesium/47">31.视角跟随</el-menu-item>
-                                    <el-menu-item index="/Cesium/48">32.自定义条带状</el-menu-item>
-                                    <el-menu-item index="/Cesium/49">33.卫星拍摄效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/50">34.立方体自定义纹理</el-menu-item>
-                                    <el-menu-item index="/Cesium/51">35.仿three的BufferGrometry示例</el-menu-item>
-                                    <el-menu-item index="/Cesium/52">36.仿THREE的Materials/Car示例</el-menu-item>
-                                    <el-menu-item index="/Cesium/53">37.多重纹理叠加</el-menu-item>
-                                    <el-menu-item index="/Cesium/54">38.根据顶点和垂足两点绘制三角形</el-menu-item>
-                                    <el-menu-item index="/Cesium/55">39.根据距离，起点，角度找到目标点(turf)</el-menu-item>
-                                    <el-menu-item index="/Cesium/56">40.通过点选获取地形或物体上的位置</el-menu-item>
-                                    <el-menu-item index="/Cesium/57">41.LED投射灯效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/58">42.根据矢量方向拉伸</el-menu-item>
-                                    <el-menu-item index="/Cesium/59">43.彩色文字</el-menu-item>
-                                    <el-menu-item index="/Cesium/60">44.动态虚线</el-menu-item>
-                                    <el-menu-item index="/Cesium/61">45.发光线颜色修改</el-menu-item>
-                                    <el-menu-item index="/Cesium/62">46.闪电</el-menu-item>
-                                    <el-menu-item index="/Cesium/63">47.绘制公里网络</el-menu-item>
-                                    <el-menu-item index="/Cesium/64">48.顶点着色器改大小</el-menu-item>
-                                    <el-menu-item index="/Cesium/65">49.CZML动点连线</el-menu-item>
-                                    <el-menu-item index="/Cesium/66">50.道路效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/67">51.旗帜模拟效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/68">52.polygon随时间变化</el-menu-item>
-                                    <el-menu-item index="/Cesium/69">53.模型侧面绘圆</el-menu-item>
-                                    <el-menu-item index="/Cesium/70">54.3D雷达</el-menu-item>
-                                    <el-menu-item index="/Cesium/71">55.判断点在圆锥内</el-menu-item>
-                                    <el-menu-item index="/Cesium/72">56.polylineVolumn重构</el-menu-item>
-                                    <el-menu-item index="/Cesium/73">57.动态path添加点线(path)</el-menu-item>
-                                    <el-menu-item index="/Cesium/74">58.射线与地球相交</el-menu-item>
-                                    <el-menu-item index="/Cesium/75">59.斜线填充多边形</el-menu-item>
-                                    <el-menu-item index="/Cesium/76">60.3Dtile风格调整(shader自定义)</el-menu-item>
-                                    <el-menu-item index="/Cesium/77">61.两点构建圆锥</el-menu-item>
-                                    <el-menu-item index="/Cesium/78">62.gltf模型颜色渐变</el-menu-item>
-                                    <el-menu-item index="/Cesium/79">63.视图后处理</el-menu-item>
-                                    <el-menu-item index="/Cesium/80">64.视频显示</el-menu-item>
-                                    <el-menu-item index="/Cesium/81">65.闪电Plus</el-menu-item>
-                                    <el-menu-item index="/Cesium/82">66.视椎体底部坐标</el-menu-item>
-                                    <el-menu-item index="/Cesium/83">67.视椎体底部坐标(旋转矩阵获得)</el-menu-item>
-                                    <el-menu-item index="/Cesium/84">68.坐标轴</el-menu-item>
-                                    <el-menu-item index="/Cesium/85">69.雾</el-menu-item>
-                                    <el-menu-item index="/Cesium/86">70.多边形边缘渐变</el-menu-item>
-                                    <el-menu-item index="/Cesium/87">71.体渲染</el-menu-item>
-                                    <el-menu-item index="/Cesium/88">72.爆炸特效</el-menu-item>
-                                    <el-menu-item index="/Cesium/89">73.爆炸特效Plus</el-menu-item>
-                                    <el-menu-item index="/Cesium/90">74.显示多个球</el-menu-item>
-                                    <el-menu-item index="/Cesium/91">75.显示Turf构成的TIN</el-menu-item>
-                                    <el-menu-item index="/Cesium/92">74.entities后处理</el-menu-item>
-                                    <el-menu-item index="/Cesium/93">75.动态热力图</el-menu-item>
-                                    <el-menu-item index="/Cesium/94">76.发光效果后处理</el-menu-item>
-                                    <el-menu-item index="/Cesium/95">77.天空盒</el-menu-item>
-                                    <el-menu-item index="/Cesium/96">78.下雨效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/97">79.下雪效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/98">80.淹没分析</el-menu-item>
-                                    <el-menu-item index="/Cesium/99">81.水效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/100">82.卷帘效果</el-menu-item>
-                                    <el-menu-item index="/Cesium/101">83.体素体渲染(voxel rendering)</el-menu-item>
-                                    <el-menu-item index="/Cesium/102">84.自定义shader材质</el-menu-item>
-                                    <el-menu-item index="/Cesium/103">85.迁移shadetoy的shader(2d)</el-menu-item>
-                                    <el-menu-item index="/Cesium/104">85.迁移shadetoy的shader(3d)</el-menu-item>
-                                    <el-menu-item index="/Cesium/105">86.3D纹理+RayMarching+代理几何实现体渲染</el-menu-item>
-                                </el-scrollbar>
-                                </el-menu-item-group>
-                        </el-sub-menu>
+                    <template #title>
+                        Cesium入门
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/Cesium/01">1.初始化地图</el-menu-item>
+                        <el-menu-item index="/Cesium/02">2.绘制形状(Entity与CZML)</el-menu-item>
+                        <el-menu-item index="/Cesium/03">3.加载并控制3dtiles</el-menu-item>
+                        <el-menu-item index="/Cesium/04">4.材质Material</el-menu-item>
+                        <el-menu-item index="/Cesium/05">5.Camera控制</el-menu-item>
+                        <el-menu-item index="/Cesium/06">6.加载geojson数据</el-menu-item>
+                        <el-menu-item index="/Cesium/07">7.自定义形状-扇形</el-menu-item>
+                        <el-menu-item index="/Cesium/08">8.polyline弧段类型</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="Cesium2">
+                    <template #title>
+                        Cesium中级
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/Cesium/09">1.渐变纹理</el-menu-item>
+                        <el-menu-item index="/Cesium/10">2.四种贴地线</el-menu-item>
+                        <el-menu-item index="/Cesium/11">3.地球纹理</el-menu-item>
+                        <el-menu-item index="/Cesium/12">4.CZML动态路径</el-menu-item>
+                        <!-- <el-menu-item index="/Cesium/13">5.Heatmap热力图</el-menu-item> -->
+                        <el-menu-item index="/Cesium/14">6.鹰眼图</el-menu-item>
+                        <el-menu-item index="/Cesium/15">7.动态纹理-颜色</el-menu-item>
+                        <el-menu-item index="/Cesium/16">8.Entity聚合</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="Cesium3">
+                    <template #title>
+                        Cesium高级
+                    </template>
+                    <el-menu-item-group>
+                        <el-scrollbar height="600px">
+                            <el-menu-item index="/Cesium/17">1.Animation主题</el-menu-item>
+                            <el-menu-item index="/Cesium/18">2.纯色地图</el-menu-item>
+                            <el-menu-item index="/Cesium/19">3.连续飞行</el-menu-item>
+                            <el-menu-item index="/Cesium/20">4.气泡窗口</el-menu-item>
+                            <el-menu-item index="/Cesium/21">5.气泡探窗不受遮挡</el-menu-item>
+                            <el-menu-item index="/Cesium/22">6.Entity选中效果修改</el-menu-item>
+                            <el-menu-item index="/Cesium/23">7.限制地图范围</el-menu-item>
+                            <el-menu-item index="/Cesium/24">8.Primitive类</el-menu-item>
+                            <el-menu-item index="/Cesium/25">9.Primitive自定义形状</el-menu-item>
+                            <el-menu-item index="/Cesium/26">10.ray射线</el-menu-item>
+                            <el-menu-item index="/Cesium/27">11.水面特效</el-menu-item>
+                            <el-menu-item index="/Cesium/28">12.自定义entity与primative动态纹理</el-menu-item>
+                            <el-menu-item index="/Cesium/29">13.在原有的primitive基础上自定义形状</el-menu-item>
+                            <el-menu-item index="/Cesium/30">14.模型Entity与primitive旋转</el-menu-item>
+                            <el-menu-item index="/Cesium/31">15.多个模型朝向一个点</el-menu-item>
+                            <el-menu-item index="/Cesium/32">16.多边形带孔</el-menu-item>
+                            <el-menu-item index="/Cesium/33">17.geojson点样式</el-menu-item>
+                            <el-menu-item index="/Cesium/34">18.Cesium粒子系统</el-menu-item>
+                            <el-menu-item index="/Cesium/35">19.修改运动中物体朝向</el-menu-item>
+                            <el-menu-item index="/Cesium/36">20.流动线</el-menu-item>
+                            <el-menu-item index="/Cesium/37">21.虚线圆</el-menu-item>
+                            <el-menu-item index="/Cesium/38">22.加载arcgis底图</el-menu-item>
+                            <el-menu-item index="/Cesium/39">23.turf进行缓冲区计算</el-menu-item>
+                            <el-menu-item index="/Cesium/40">24.显示多边形内底图</el-menu-item>
+                            <el-menu-item index="/Cesium/41">25.纹理裁剪</el-menu-item>
+                            <el-menu-item index="/Cesium/42">26.彩虹</el-menu-item>
+                            <el-menu-item index="/Cesium/43">27.lookat效果</el-menu-item>
+                            <el-menu-item index="/Cesium/44">28.太极特效</el-menu-item>
+                            <el-menu-item index="/Cesium/45">29.geojson设置水面材质</el-menu-item>
+                            <el-menu-item index="/Cesium/46">30.射线拾取物体</el-menu-item>
+                            <el-menu-item index="/Cesium/47">31.视角跟随</el-menu-item>
+                            <el-menu-item index="/Cesium/48">32.自定义条带状</el-menu-item>
+                            <el-menu-item index="/Cesium/49">33.卫星拍摄效果</el-menu-item>
+                            <el-menu-item index="/Cesium/50">34.立方体自定义纹理</el-menu-item>
+                            <el-menu-item index="/Cesium/51">35.仿three的BufferGrometry示例</el-menu-item>
+                            <el-menu-item index="/Cesium/52">36.仿THREE的Materials/Car示例</el-menu-item>
+                            <el-menu-item index="/Cesium/53">37.多重纹理叠加</el-menu-item>
+                            <el-menu-item index="/Cesium/54">38.根据顶点和垂足两点绘制三角形</el-menu-item>
+                            <el-menu-item index="/Cesium/55">39.根据距离，起点，角度找到目标点(turf)</el-menu-item>
+                            <el-menu-item index="/Cesium/56">40.通过点选获取地形或物体上的位置</el-menu-item>
+                            <el-menu-item index="/Cesium/57">41.LED投射灯效果</el-menu-item>
+                            <el-menu-item index="/Cesium/58">42.根据矢量方向拉伸</el-menu-item>
+                            <el-menu-item index="/Cesium/59">43.彩色文字</el-menu-item>
+                            <el-menu-item index="/Cesium/60">44.动态虚线</el-menu-item>
+                            <el-menu-item index="/Cesium/61">45.发光线颜色修改</el-menu-item>
+                            <el-menu-item index="/Cesium/62">46.闪电</el-menu-item>
+                            <el-menu-item index="/Cesium/63">47.绘制公里网络</el-menu-item>
+                            <el-menu-item index="/Cesium/64">48.顶点着色器改大小</el-menu-item>
+                            <el-menu-item index="/Cesium/65">49.CZML动点连线</el-menu-item>
+                            <el-menu-item index="/Cesium/66">50.道路效果</el-menu-item>
+                            <el-menu-item index="/Cesium/67">51.旗帜模拟效果</el-menu-item>
+                            <el-menu-item index="/Cesium/68">52.polygon随时间变化</el-menu-item>
+                            <el-menu-item index="/Cesium/69">53.模型侧面绘圆</el-menu-item>
+                            <el-menu-item index="/Cesium/70">54.3D雷达</el-menu-item>
+                            <el-menu-item index="/Cesium/71">55.判断点在圆锥内</el-menu-item>
+                            <el-menu-item index="/Cesium/72">56.polylineVolumn重构</el-menu-item>
+                            <el-menu-item index="/Cesium/73">57.动态path添加点线(path)</el-menu-item>
+                            <el-menu-item index="/Cesium/74">58.射线与地球相交</el-menu-item>
+                            <el-menu-item index="/Cesium/75">59.斜线填充多边形</el-menu-item>
+                            <el-menu-item index="/Cesium/76">60.3Dtile风格调整(shader自定义)</el-menu-item>
+                            <el-menu-item index="/Cesium/77">61.两点构建圆锥</el-menu-item>
+                            <el-menu-item index="/Cesium/78">62.gltf模型颜色渐变</el-menu-item>
+                            <el-menu-item index="/Cesium/79">63.视图后处理</el-menu-item>
+                            <el-menu-item index="/Cesium/80">64.视频显示</el-menu-item>
+                            <el-menu-item index="/Cesium/81">65.闪电Plus</el-menu-item>
+                            <el-menu-item index="/Cesium/82">66.视椎体底部坐标</el-menu-item>
+                            <el-menu-item index="/Cesium/83">67.视椎体底部坐标(旋转矩阵获得)</el-menu-item>
+                            <el-menu-item index="/Cesium/84">68.坐标轴</el-menu-item>
+                            <el-menu-item index="/Cesium/85">69.雾</el-menu-item>
+                            <el-menu-item index="/Cesium/86">70.多边形边缘渐变</el-menu-item>
+                            <el-menu-item index="/Cesium/87">71.体渲染</el-menu-item>
+                            <el-menu-item index="/Cesium/88">72.爆炸特效</el-menu-item>
+                            <el-menu-item index="/Cesium/89">73.爆炸特效Plus</el-menu-item>
+                            <el-menu-item index="/Cesium/90">74.显示多个球</el-menu-item>
+                            <el-menu-item index="/Cesium/91">75.显示Turf构成的TIN</el-menu-item>
+                            <el-menu-item index="/Cesium/92">74.entities后处理</el-menu-item>
+                            <el-menu-item index="/Cesium/93">75.动态热力图</el-menu-item>
+                            <el-menu-item index="/Cesium/94">76.发光效果后处理</el-menu-item>
+                            <el-menu-item index="/Cesium/95">77.天空盒</el-menu-item>
+                            <el-menu-item index="/Cesium/96">78.下雨效果</el-menu-item>
+                            <el-menu-item index="/Cesium/97">79.下雪效果</el-menu-item>
+                            <el-menu-item index="/Cesium/98">80.淹没分析</el-menu-item>
+                            <el-menu-item index="/Cesium/99">81.水效果</el-menu-item>
+                            <el-menu-item index="/Cesium/100">82.卷帘效果</el-menu-item>
+                            <el-menu-item index="/Cesium/101">83.体素体渲染(voxel rendering)</el-menu-item>
+                            <el-menu-item index="/Cesium/102">84.自定义shader材质</el-menu-item>
+                            <el-menu-item index="/Cesium/103">85.迁移shadetoy的shader(2d)</el-menu-item>
+                            <el-menu-item index="/Cesium/104">85.迁移shadetoy的shader(3d)</el-menu-item>
+                            <el-menu-item index="/Cesium/105">86.3D纹理+RayMarching+代理几何实现体渲染</el-menu-item>
+                        </el-scrollbar>
+                    </el-menu-item-group>
+                </el-sub-menu>
             </el-sub-menu>
             <el-sub-menu index="3">
                 <template #title>webgl学习</template>
                 <el-sub-menu index="webgl1">
-                                <template #title>
-                                    数学函数
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/webgl/01">1.abs</el-menu-item>
-                                    <el-menu-item index="/webgl/02">2.sign</el-menu-item>
-                                    <el-menu-item index="/webgl/03">3.Ceil</el-menu-item>
-                                    <el-menu-item index="/webgl/04">4.floor</el-menu-item>
-                                    <el-menu-item index="/webgl/05">5.smoothstep</el-menu-item>
-                                    <el-menu-item index="/webgl/06">6.step</el-menu-item>
-                                    <el-menu-item index="/webgl/07">7.min</el-menu-item>
-                                    <el-menu-item index="/webgl/08">8.max</el-menu-item>
-                                    <el-menu-item index="/webgl/09">9.mod</el-menu-item>
-                                    <el-menu-item index="/webgl/10">10.mix</el-menu-item>
-                                    <el-menu-item index="/webgl/11">11.clamp</el-menu-item>
-                                    <el-menu-item index="/webgl/12">12.fract</el-menu-item>
-                                    <el-menu-item index="/webgl/13">13.radians_and_degree</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="webgl2">
-                                <template #title>
-                                    三角函数
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/webgl/14">1.sin_and_cos</el-menu-item>
-                                    <el-menu-item index="/webgl/15">2.tan</el-menu-item>
-                                    <el-menu-item index="/webgl/16">3.asin_and_acos</el-menu-item>
-                                    <el-menu-item index="/webgl/17">4.atan</el-menu-item>
-                                    <el-menu-item index="/webgl/18">5.example1</el-menu-item>
-                                    <el-menu-item index="/webgl/19">6.example2</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="webgl3">
-                                <template #title>
-                                    几何函数
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/webgl/20">1.length_and_distance</el-menu-item>
-                                    <el-menu-item index="/webgl/21">2.pow</el-menu-item>
-                                    <el-menu-item index="/webgl/22">3.exp</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="webgl4">
-                                <template #title>
-                                    矢量与矩阵
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/webgl/23">1.vec</el-menu-item>
-                                    <el-menu-item index="/webgl/24">2.tansform</el-menu-item>
-                                    <el-menu-item index="/webgl/25">3.rotate</el-menu-item>
-                                    <el-menu-item index="/webgl/26">4.scale</el-menu-item>
-                                    <el-menu-item index="/webgl/27">5.Matrix</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="webgl5">
-                                <template #title>
-                                    随机数与分型
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/webgl/28">1.random</el-menu-item>
-                                    <el-menu-item index="/webgl/29">2.噪音</el-menu-item>
-                                    <el-menu-item index="/webgl/30">3.分型</el-menu-item>
-                                    <el-menu-item index="/webgl/31">4.坐标系模拟</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            <el-sub-menu index="webgl6">
-                                <template #title>
-                                    案例
-                                </template>
-                                <el-menu-item-group>
-                                    <el-menu-item index="/webgl/32">1.fire</el-menu-item>
-                                    <el-menu-item index="/webgl/33">2.雷达扫描</el-menu-item>
-                                    <el-menu-item index="/webgl/34">3.幻境</el-menu-item>
-                                    <el-menu-item index="/webgl/35">4.五星红旗</el-menu-item>
-                                    <el-menu-item index="/webgl/36">5.电池充电</el-menu-item>
-                                    <el-menu-item index="/webgl/37">5.大海</el-menu-item>
-                                    <el-menu-item index="/webgl/38">6.雨夜</el-menu-item>
-                                </el-menu-item-group>
-                            </el-sub-menu>
-                            
-                
-            </el-sub-menu >
+                    <template #title>
+                        数学函数
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/webgl/01">1.abs</el-menu-item>
+                        <el-menu-item index="/webgl/02">2.sign</el-menu-item>
+                        <el-menu-item index="/webgl/03">3.Ceil</el-menu-item>
+                        <el-menu-item index="/webgl/04">4.floor</el-menu-item>
+                        <el-menu-item index="/webgl/05">5.smoothstep</el-menu-item>
+                        <el-menu-item index="/webgl/06">6.step</el-menu-item>
+                        <el-menu-item index="/webgl/07">7.min</el-menu-item>
+                        <el-menu-item index="/webgl/08">8.max</el-menu-item>
+                        <el-menu-item index="/webgl/09">9.mod</el-menu-item>
+                        <el-menu-item index="/webgl/10">10.mix</el-menu-item>
+                        <el-menu-item index="/webgl/11">11.clamp</el-menu-item>
+                        <el-menu-item index="/webgl/12">12.fract</el-menu-item>
+                        <el-menu-item index="/webgl/13">13.radians_and_degree</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="webgl2">
+                    <template #title>
+                        三角函数
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/webgl/14">1.sin_and_cos</el-menu-item>
+                        <el-menu-item index="/webgl/15">2.tan</el-menu-item>
+                        <el-menu-item index="/webgl/16">3.asin_and_acos</el-menu-item>
+                        <el-menu-item index="/webgl/17">4.atan</el-menu-item>
+                        <el-menu-item index="/webgl/18">5.example1</el-menu-item>
+                        <el-menu-item index="/webgl/19">6.example2</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="webgl3">
+                    <template #title>
+                        几何函数
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/webgl/20">1.length_and_distance</el-menu-item>
+                        <el-menu-item index="/webgl/21">2.pow</el-menu-item>
+                        <el-menu-item index="/webgl/22">3.exp</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="webgl4">
+                    <template #title>
+                        矢量与矩阵
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/webgl/23">1.vec</el-menu-item>
+                        <el-menu-item index="/webgl/24">2.tansform</el-menu-item>
+                        <el-menu-item index="/webgl/25">3.rotate</el-menu-item>
+                        <el-menu-item index="/webgl/26">4.scale</el-menu-item>
+                        <el-menu-item index="/webgl/27">5.Matrix</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="webgl5">
+                    <template #title>
+                        随机数与分型
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/webgl/28">1.random</el-menu-item>
+                        <el-menu-item index="/webgl/29">2.噪音</el-menu-item>
+                        <el-menu-item index="/webgl/30">3.分型</el-menu-item>
+                        <el-menu-item index="/webgl/31">4.坐标系模拟</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+                <el-sub-menu index="webgl6">
+                    <template #title>
+                        案例
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/webgl/32">1.fire</el-menu-item>
+                        <el-menu-item index="/webgl/33">2.雷达扫描</el-menu-item>
+                        <el-menu-item index="/webgl/34">3.幻境</el-menu-item>
+                        <el-menu-item index="/webgl/35">4.五星红旗</el-menu-item>
+                        <el-menu-item index="/webgl/36">5.电池充电</el-menu-item>
+                        <el-menu-item index="/webgl/37">5.大海</el-menu-item>
+                        <el-menu-item index="/webgl/38">6.雨夜</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+
+
+            </el-sub-menu>
+            <el-sub-menu index="4">
+                <template #title>
+                    canvas学习
+                </template>
+                <el-sub-menu index="canvas1">
+                    <template #title>
+                        案例
+                    </template>
+                    <el-menu-item-group>
+                        <el-menu-item index="/canvas/01">1.刮刮乐</el-menu-item>
+                        <el-menu-item index="/canvas/02">2.签名绘版</el-menu-item>
+                        <el-menu-item index="/canvas/03">3.水墨画</el-menu-item>
+                    </el-menu-item-group>
+                </el-sub-menu>
+            </el-sub-menu>
             <el-menu-item index="/examples">
-                案例
+                Three案例
             </el-menu-item>
         </el-menu>
     </el-header>
@@ -496,8 +511,8 @@ import router from '../router';
 .asider {
     scrollbar-width: none;
 }
-.el-menu--horizontal > .el-menu-item:nth-child(1) {
-  margin-right: 60%;
-}
 
+.el-menu--horizontal>.el-menu-item:nth-child(1) {
+    margin-right: 60%;
+}
 </style>
